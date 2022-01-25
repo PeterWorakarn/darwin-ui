@@ -1,0 +1,46 @@
+{
+  "name": "Drawin UI",
+  "short_name": "Drawin UI",
+  "icons": [
+    {
+      "src": "/icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon-70x70.png",
+      "sizes": "70x70",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon-310x150.png",
+      "sizes": "310x150",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "display": "fullscreen",
+  "start_url": "/?source=pwa",
+  "orientation": "portrait"
+}

@@ -4,7 +4,7 @@ function extractPathName(pathname: string) {
   if (pathArr !== null) {
     return pathArr[0];
   }
-  return '/Home';
+  return 'Home';
 }
 
 export default extractPathName;

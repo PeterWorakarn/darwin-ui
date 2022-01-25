@@ -1,0 +1,6 @@
+/* Tenor Sans */
+@font-face {
+  font-family: Tenor Sans;
+  font-weight: 400;
+  src:  url('/fonts/TenorSans/TenorSans-Regular.ttf') format("truetype");
+}
