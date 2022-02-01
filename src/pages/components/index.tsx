@@ -4,6 +4,7 @@ import Head from 'next/head'
 const Component: NextPage = () => {
   return (
     <>
+    Components Page
     </>
   )
 }

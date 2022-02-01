@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
-import extractPathName from '../utils/extract-path';
-import titleCase from '../utils/title-case';
+import extractPathName from './utils/extract-path';
+import titleCase from './utils/title-case';
 
 const transformPath = (path: string) => {
   if (path === '/404') return '404';
