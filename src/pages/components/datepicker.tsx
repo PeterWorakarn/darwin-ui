@@ -54,6 +54,7 @@ const DatePickerPage: NextPage<DocProps> = ({
         title={title}
         short={short}
         markDown={markDown}
+        component={component}
       />
       <ShowCaseBlock
         blockType={blockType}
