@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
       <Html style={{ scrollBehavior: 'smooth' }} lang="en">
         <Head />
         {/* TODO: Scroll Smooth, Selector Color,  */}
-        <body className="selection:bg-[#EF4444] selection:text-white scroll-bar">
+        <body className="selection:bg-primary-navy selection:text-white scroll-bar">
           <Main />
           <NextScript />
         </body>
