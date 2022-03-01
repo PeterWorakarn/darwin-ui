@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import Button from '../../doc/button/Button';
-import DatePickerContainer from '../../doc/datepicker/ADatePickerContainer';
+import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 
 type TRoute = {
   type: 'component';

@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 
 const NotFound: NextPage = () => {
   return (
@@ -9,7 +9,7 @@ const NotFound: NextPage = () => {
         </h1>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;
