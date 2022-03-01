@@ -1,6 +1,6 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import HeadSEO from '../feature/seo/HeadSEO'
+import '../styles/tailwind.css';
+import type { AppProps } from 'next/app';
+import HeadSEO from '../feature/seo/HeadSEO';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,6 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <HeadSEO />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
-export default MyApp
+export default MyApp;
