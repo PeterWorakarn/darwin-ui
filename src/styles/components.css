@@ -1,0 +1,47 @@
+@layer components {
+  /* Layout // */
+  /* Navigation Bar */
+  /* Side Bar */
+
+  /* Category Page // */
+
+  /* Components Page // */
+
+  /* Header Block */
+  .header {
+    @apply flex justify-between items-center mx-auto max-w-2xl;
+    .header-content {
+      .header__heading {
+        @apply capitalize text-3xl  font-semibold text-typo-main;
+      }
+      .header__tagline {
+        @apply capitalize text-2xl max-w-[360px] text-typo-minor;
+      }
+      .header__description {
+        @apply hidden;
+      }
+    }
+    .header-cover {
+      @apply hidden pointer-events-none;
+    }
+  }
+
+  /* Showcase Page */
+  .showcase {
+    @apply flex flex-col sm:flex-row justify-between items-start max-w-5xl mx-auto;
+  }
+
+  /* Code-Editor Block */
+  .code-editor {
+    .code-editor__filename {
+      @apply flex flex-row gap-2;
+    }
+    .code-editor__sourcecode {
+      @apply transition-all duration-150;
+    }
+    pre {
+      margin-top: 0px !important;
+      @apply w-[580px] h-[508px] rounded-b-md;
+    }
+  }
+};
