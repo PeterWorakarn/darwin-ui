@@ -12,6 +12,7 @@ import ROUTES, { TRoute } from '../../../constant-enum-type/route';
 import titleCase from '../../../feature/seo/utils/title-case';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
+  // FIXME: https://vercel.com/support/articles/how-can-i-use-files-in-serverless-functions
   let doc: TSourceCode[] = [];
   const component_infos = ROUTES.filter((component) => {
     if (component.type === 'component' && component.title === context.query.component_name as string) {
@@ -36,8 +37,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       };
     });
   }
-  const component_info: any[] = [];
-  // const component_info = JSON.parse(JSON.stringify(component_infos));
+  // const component_info: any[] = [];
+  const component_info = JSON.parse(JSON.stringify(component_infos));
 
   return {
     props: {
