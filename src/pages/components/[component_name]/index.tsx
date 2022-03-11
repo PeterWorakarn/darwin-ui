@@ -65,15 +65,15 @@ const getCompoent = (title: string) => {
 const ComponentPage: NextPage<DocProps> = ({
   doc, component_info,
 }) => {
-  const router = useRouter();
-  const overideSEO = {
-    titleTemplate: '%s | Drawin UI',
-    title: titleCase(router.query.component_name as NextParsedUrlQuery as string),
-    canonical: router.route,
-  };
+  // const router = useRouter();
+  // const overideSEO = {
+  //   titleTemplate: '%s | Drawin UI',
+  //   title: titleCase(router.query.component_name as NextParsedUrlQuery as string),
+  //   canonical: router.route,
+  // };
   return (
     <>
-      <NextSeo {...overideSEO} />
+      {/* <NextSeo {...overideSEO} /> */}
       {doc.length === 0 || component_info[0].type !== 'component' ? <NotFound /> : (
         <>
           <HeaderBlock
