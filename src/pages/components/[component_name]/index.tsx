@@ -1,14 +1,14 @@
 import type { GetServerSideProps, NextPage } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { NextSeo } from 'next-seo';
+import { useRouter } from 'next/router';
+import { NextParsedUrlQuery } from 'next/dist/server/request-meta';
 import { TSourceCode } from '../../../constant-enum-type/doc';
 import HeaderBlock from '../../../feature/showcase/components/HeaderBlock';
 import ShowCaseBlock from '../../../feature/showcase/components/ShowCaseBlock';
 import NotFound from '../../404';
 import ROUTES, { TRoute } from '../../../constant-enum-type/route';
-import { NextSeo } from 'next-seo';
-import { useRouter } from 'next/router';
-import { NextParsedUrlQuery } from 'next/dist/server/request-meta';
 import titleCase from '../../../feature/seo/utils/title-case';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
