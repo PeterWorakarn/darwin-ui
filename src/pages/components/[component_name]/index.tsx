@@ -6,6 +6,10 @@ import HeaderBlock from '../../../feature/showcase/components/HeaderBlock';
 import ShowCaseBlock from '../../../feature/showcase/components/ShowCaseBlock';
 import NotFound from '../../404';
 import ROUTES, { TRoute } from '../../../constant-enum-type/route';
+import { NextSeo } from 'next-seo';
+import { useRouter } from 'next/router';
+import { NextParsedUrlQuery } from 'next/dist/server/request-meta';
+import titleCase from '../../../feature/seo/utils/title-case';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   let doc: TSourceCode[] = [];
@@ -61,8 +65,15 @@ const getCompoent = (title: string) => {
 const ComponentPage: NextPage<DocProps> = ({
   doc, component_info,
 }) => {
+  const router = useRouter();
+  const overideSEO = {
+    titleTemplate: '%s | Drawin UI',
+    title: titleCase(router.query.component_name as NextParsedUrlQuery as string),
+    canonical: router.route,
+  };
   return (
     <>
+      <NextSeo {...overideSEO} />
       {doc.length === 0 || component_info[0].type !== 'component' ? <NotFound /> : (
         <>
           <HeaderBlock
