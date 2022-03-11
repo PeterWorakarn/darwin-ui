@@ -36,8 +36,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       };
     });
   }
-
-  const component_info = JSON.parse(JSON.stringify(component_infos));
+  const component_info: any[] = [];
+  // const component_info = JSON.parse(JSON.stringify(component_infos));
 
   return {
     props: {
