@@ -7,7 +7,7 @@ import DatePickerContainer from '../../../doc/datepicker/aDatePickerContainer';
 import ROUTES from '../../constant-enum-type/route';
 import Card from '../../feature/common/components/Card';
 
-const Component: NextPage = () => {
+const CategoryPage: NextPage = () => {
   return (
     <>
       <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-9 mx-auto max-w-4xl py-5">
@@ -29,4 +29,4 @@ const Component: NextPage = () => {
   );
 };
 
-export default Component;
+export default CategoryPage;
