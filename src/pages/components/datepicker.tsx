@@ -9,7 +9,7 @@ import DatePickerContainer from '../../../doc/datepicker/aDatePickerContainer';
 const title = 'datepicker';
 const short = 'datepicker';
 const component_name = 'datepicker';
-const blockType:TBlockType = TBlockType.RECTANGLE;
+const blockType: TBlockType = TBlockType.RECTANGLE;
 const component = (
   <DatePickerContainer />
 );
@@ -54,7 +54,6 @@ const DatePickerPage: NextPage<DocProps> = ({
         title={title}
         short={short}
         markDown={markDown}
-        component={component}
       />
       <ShowCaseBlock
         blockType={blockType}

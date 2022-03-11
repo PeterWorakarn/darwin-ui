@@ -1,10 +1,17 @@
+/* eslint-disable no-useless-escape */
 const pathRegrex = /^[/][A-za-z\-]*/;
-function extractPathName(pathname: string) {
+const extractComponentName = (name: string) => {
+  return name.split('/')[2];
+};
+const extractPathName = (pathname: string) => {
   const pathArr = pathname.match(pathRegrex);
-  if (pathArr !== null) {
-    return pathArr[0];
+  if (pathArr !== null && pathArr.input) {
+    if (pathArr.input.includes('/components/')) {
+      return extractComponentName(pathArr.input);
+    }
+    return pathArr.input;
   }
   return 'Home';
-}
+};
 
 export default extractPathName;

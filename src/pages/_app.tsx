@@ -1,12 +1,15 @@
 import '../styles/tailwind.css';
 import type { AppProps } from 'next/app';
 import HeadSEO from '../feature/seo/HeadSEO';
+import Layout from '../feature/common/components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <HeadSEO />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

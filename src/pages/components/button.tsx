@@ -9,7 +9,7 @@ import Button from '../../../doc/button/Button';
 const title = 'button';
 const short = 'The button is an essential element of any design.';
 const component_name = 'button';
-const blockType:TBlockType = TBlockType.SQUARE;
+const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <Button />
 );
@@ -54,7 +54,6 @@ const ButtonPage: NextPage<DocProps> = ({
         title={title}
         short={short}
         markDown={markDown}
-        component={component}
       />
       <ShowCaseBlock
         blockType={blockType}

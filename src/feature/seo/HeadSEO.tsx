@@ -7,18 +7,17 @@ const transformPath = (path: string) => {
   if (path === '/404') return '404';
   // remove last query
   const pathname = extractPathName(path);
-
   // Create upper case
   return titleCase(pathname.replace('/', '').replace('-', ' '));
-}
+};
 
 const HeadSEO: React.FC = () => {
   const router = useRouter();
   const overideSEO = {
-    titleTemplate: "%s | Drawin UI",
+    titleTemplate: '%s | Drawin UI',
     title: transformPath(router.pathname === '/' ? 'Coming soon' : router.pathname),
     canonical: router.route,
-    description: "Simple and Clean Tailwind Component with React Hook",
+    description: 'Simple and Clean Tailwind Component with React Hook',
     // additionalLinkTags:
     //   [
     //     {

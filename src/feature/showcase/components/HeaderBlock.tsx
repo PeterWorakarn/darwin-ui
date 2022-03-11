@@ -4,11 +4,9 @@ interface THeaderBlock {
   title: string;
   short: string;
   markDown: string;
-  component: JSX.Element;
 }
 
-const HeaderBlock:React.FC<THeaderBlock> = (props) => {
-  // TODO: https://bulma.io/documentation/components/breadcrumb/
+const HeaderBlock: React.FC<THeaderBlock> = (props) => {
   return (
     <>
       <section className="header">
@@ -20,12 +18,8 @@ const HeaderBlock:React.FC<THeaderBlock> = (props) => {
             {props.short}
           </p>
         </div>
-        <div className="header-cover">
-          {props.component}
-        </div>
-
       </section>
-      <ReactMarkdown className="header__description prose prose-sm prose-slate prose-p:">
+      <ReactMarkdown className="description">
         {props.markDown}
       </ReactMarkdown>
     </>

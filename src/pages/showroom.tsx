@@ -4,28 +4,30 @@ import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import { TBlockType } from '../constant-enum-type/doc';
 import GithubFAB from '../feature/common/components/GithubFAB';
+import Layout from '../feature/common/components/Layout';
 import ComponentBlock from '../feature/showcase/components/ComponentBlock';
 
-const ShowRoomPage:NextPage = () => {
+const ShowRoomPage: NextPage = () => {
   return (
-    <main className="grid grid-cols-1 xl:grid-cols-4 gap-4 p-4">
-      <GithubFAB />
-      <ComponentBlock type={TBlockType.SQUARE}>
-        <Button />
-      </ComponentBlock>
-      <ComponentBlock type={TBlockType.SQUARE}>
-        <Checkbox />
-      </ComponentBlock>
-      <ComponentBlock type={TBlockType.SQUARE}>
-        LOREM
-      </ComponentBlock>
-      <ComponentBlock type={TBlockType.SQUARE}>
-        LOREM
-      </ComponentBlock>
-      <ComponentBlock type={TBlockType.RECTANGLE}>
-        <DatePickerContainer />
-      </ComponentBlock>
-    </main>
+    <>
+      <main className="grid grid-cols-1 xl:grid-cols-4 gap-4 p-4">
+        <ComponentBlock type={TBlockType.SQUARE}>
+          <Button />
+        </ComponentBlock>
+        <ComponentBlock type={TBlockType.SQUARE}>
+          <Checkbox />
+        </ComponentBlock>
+        <ComponentBlock type={TBlockType.SQUARE}>
+          LOREM
+        </ComponentBlock>
+        <ComponentBlock type={TBlockType.SQUARE}>
+          LOREM
+        </ComponentBlock>
+        <ComponentBlock type={TBlockType.RECTANGLE}>
+          <DatePickerContainer />
+        </ComponentBlock>
+      </main>
+    </>
   );
 };
 

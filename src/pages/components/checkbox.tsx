@@ -9,7 +9,7 @@ import Checkbox from '../../../doc/checkbox/Checkbox';
 const title = 'checkbox';
 const short = 'checkbox';
 const component_name = 'checkbox';
-const blockType:TBlockType = TBlockType.SQUARE;
+const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <Checkbox />
 );
@@ -54,7 +54,6 @@ const DatePickerPage: NextPage<DocProps> = ({
         title={title}
         short={short}
         markDown={markDown}
-        component={component}
       />
       <ShowCaseBlock
         blockType={blockType}

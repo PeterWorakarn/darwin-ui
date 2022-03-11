@@ -54,17 +54,15 @@ const DatePicker: React.FC<TDatePicker> = (props) => {
             name={props.name ? props.name : 'date'}
             value={moment(props.dateValue).format('DD MMM YYYY') as string}
             type="text"
-            // onBlur={() => onClickOutside(false)}
             readOnly
           />
-          <i className="absolute top-3 right-1.5 text-[#6e6e6e]">
+          <i className="absolute h-[30px] -top-1 flex items-center justify-center right-1.5 text-[#6e6e6e]">
             <HiOutlineCalendar className="w-4 h-4 text-gray-400" />
           </i>
         </div>
         <div
           className={`${isShowDatePicker ? 'opacity-100 mt-16' : 'opacity-0 mt-14'} 
-          transition-all duration-100 bg-white rounded-md shadow pl-4 pr-2 py-2 
-          absolute top-0 left-0 w-56`}
+          transition-all duration-100 bg-white rounded-md shadow pl-4 pr-2 py-2 absolute top-0 left-0 w-56`}
         >
           <div className="flex justify-between items-center mb-2">
             <div className="flex justify-start items-center gap-1 w-3/4">
@@ -126,10 +124,9 @@ const DatePicker: React.FC<TDatePicker> = (props) => {
                     props.onSelectDate(dayInMonth, tempDate);
                     setIsShowDatePicker(false);
                   }}
-                  className={`flex cursor-default justify-center items-center 
-                  text-xs h-7 rounded-full font-bold 
+                  className={`flex cursor-default justify-center items-center text-xs h-7 rounded-full font-bold 
                   ${moment(tempDate).set('date', dayInMonth).format('D MM YYYY') === moment(props.dateValue).format('D MM YYYY')
-                    ? 'bg-primary-navy text-white' : 'text-[#4B4B4B]'}`}
+                      ? 'bg-primary-navy text-white' : 'text-[#4B4B4B]'}`}
                   style={{ width: '14.18%' }}
                 >{dayInMonth}
                 </span>

@@ -3,28 +3,28 @@
   /* Navigation Bar */
   /* Scroll Bar */
   /* ScrollBar */
-.scroll-bar::-webkit-scrollbar-track,
-pre::-webkit-scrollbar-track {
-  box-shadow: none;
-  background-color: rgba(0, 0, 0, 0.1);
-  /* border-radius: 8px; */
-}
+  .scroll-bar::-webkit-scrollbar-track,
+  pre::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+  }
 
-.scroll-bar::-webkit-scrollbar,
-pre::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  background-color: #fff;
-  /* border-radius: 8px; */
-}
+  .scroll-bar::-webkit-scrollbar,
+  pre::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    /* border-radius: 8px; */
+  }
 
-.scroll-bar::-webkit-scrollbar-thumb,
-pre::-webkit-scrollbar-thumb {
-  background-color: #6e6f73;
-  border: 0px solid #fff;
-  box-shadow: none;
-  /* border-radius: 8px; */
-}
+  .scroll-bar::-webkit-scrollbar-thumb,
+  pre::-webkit-scrollbar-thumb {
+    background-color: #6e6f73;
+    border: 0px solid #fff;
+    box-shadow: none;
+    /* border-radius: 8px; */
+  }
   /* Side Bar */
 
   /* Category Page // */
@@ -33,26 +33,24 @@ pre::-webkit-scrollbar-thumb {
 
   /* Header Block */
   .header {
-    @apply flex justify-between items-center mx-auto max-w-2xl;
+    @apply flex justify-between items-center mx-auto max-w-[580px] py-5;
     .header-content {
       .header__heading {
-        @apply capitalize text-3xl  font-semibold text-typo-main;
+        @apply capitalize text-4xl mb-2  font-semibold text-typo-main;
       }
       .header__tagline {
-        @apply capitalize text-2xl max-w-[360px] text-typo-minor;
-      }
-      .header__description {
-        @apply hidden;
+        @apply capitalize text-base max-w-[360px] text-typo-minor;
       }
     }
-    .header-cover {
-      @apply hidden pointer-events-none;
-    }
+  }
+
+  .description {
+    @apply hidden justify-between items-center mx-auto max-w-[590px] py-5;
   }
 
   /* Showcase Page */
   .showcase {
-    @apply flex flex-col sm:flex-row justify-between items-start max-w-5xl mx-auto;
+    @apply max-w-4xl mx-auto flex flex-col sm:flex-row justify-start items-start gap-5;
   }
 
   /* Code-Editor Block */
@@ -65,7 +63,7 @@ pre::-webkit-scrollbar-thumb {
     }
     pre {
       margin-top: 0px !important;
-      @apply w-[580px] h-[508px] rounded-b-md;
+      @apply w-[320px] xl:w-[580px] h-[508px] rounded-b-md;
     }
   }
-};
+} ;

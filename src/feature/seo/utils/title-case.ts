@@ -1,10 +1,14 @@
-const pathRegrex = /^[/][A-za-z\-]*/;
-function extractPathName(pathname: string) {
-  const pathArr = pathname.match(pathRegrex);
-  if (pathArr !== null) {
-    return pathArr[0];
-  }
-  return 'Home';
+function titleCase(str: string) {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map(function (word) {
+      return word.replace(
+        word[0],
+        word[0].toUpperCase(),
+      );
+    })
+    .join(' ');
 }
 
-export default extractPathName;
+export default titleCase;
