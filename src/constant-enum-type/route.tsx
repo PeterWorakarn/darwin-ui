@@ -51,14 +51,14 @@ const ROUTES: TRoute[] = [
   },
   {
     type: 'component',
-    title: 'DatePicker',
+    title: 'datePicker',
     slug: 'datepicker',
     publish: true,
     component: <DatePickerContainer />,
   },
   {
     type: 'component',
-    title: 'Accordion',
+    title: 'accordion',
     slug: 'accordion',
     publish: false,
     component: <></>,

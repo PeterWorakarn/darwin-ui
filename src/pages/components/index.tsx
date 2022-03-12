@@ -15,11 +15,14 @@ const Component: NextPage = () => {
         {ROUTES.filter(i => i.type === 'component').map((route) => {
           if (route.type === 'component') {
             return (
-              <Link href={`/components/${route.type === 'component' && route.slug}`}>
-                <a>
-                  <Card isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
-                </a>
-              </Link>
+              <div className="relative" key={route.slug}>
+                <Link href={`/components/${route.type === 'component' && route.slug}`}>
+                  <div>
+                    <a className="absolute w-full h-full opacity-0" />
+                    <Card isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
+                  </div>
+                </Link>
+              </div>
             );
           }
           return null;
