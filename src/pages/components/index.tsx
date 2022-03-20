@@ -1,7 +1,10 @@
 import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import ROUTES from '../../constant-enum-type/route';
-import Card from '../../feature/common/components/Card';
+// import Card from '../../feature/common/components/Card';
+
+const Card = dynamic(import('../../feature/common/components/Card'), { ssr: true });
 
 const Component: NextPage = () => {
   return (
