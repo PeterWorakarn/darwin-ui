@@ -24,7 +24,7 @@ const Layout: React.FC = (props) => {
       <div className="w-full mx-auto w-full h-full">
         {props.children}
       </div>
-      <GithubFAB link="https://github.com/PeterWorakarn/drawin-ui" />
+      <GithubFAB link="https://github.com/PeterWorakarn/darwin-ui" />
     </>
 
   );

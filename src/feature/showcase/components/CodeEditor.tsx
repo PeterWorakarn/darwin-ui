@@ -34,7 +34,7 @@ const CodeEditor: React.FC<TCodeEditor> = (props) => {
               <span className="sr-only">
                 {code.file_name}
               </span>
-              <div className={`${currentTab === code.file_name ? 'z-30' : 'z-0'} code-editor-conatiner__sourcecode`}>
+              <div className={`${currentTab === code.file_name ? 'z-30' : 'z-0'} code-editor-container__sourcecode`}>
                 <SyntaxHighlighter
                   language="tsx"
                   wrapLines

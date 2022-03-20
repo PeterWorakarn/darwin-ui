@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { Fragment } from 'react';
 import ROUTES from '../../constant-enum-type/route';
 // import Card from '../../feature/common/components/Card';
 
@@ -24,14 +25,14 @@ const Component: NextPage = () => {
         {ROUTES.filter(i => i.type === 'component').map((route) => {
           if (route.type === 'component') {
             return (
-              <div className="relative" key={route.slug}>
+              <Fragment key={route.slug}>
                 <Link href={`/components/${route.type === 'component' && route.slug}`}>
-                  <div>
+                  <div className="relative">
                     <a className="absolute w-full h-full opacity-0" />
                     <Card isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
                   </div>
                 </Link>
-              </div>
+              </Fragment>
             );
           }
           return null;

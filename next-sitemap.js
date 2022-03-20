@@ -1,4 +1,4 @@
-const siteUrl = "drawin.peter-o.tech";
+const siteUrl = "darwin.peter-o.tech";
 
 module.exports = {
   siteUrl,

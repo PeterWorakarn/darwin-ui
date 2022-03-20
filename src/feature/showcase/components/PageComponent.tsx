@@ -10,12 +10,12 @@ interface TPageComponent {
 
 const PageComponent: React.FC<TPageComponent> = (props) => {
   return (
-    <div>
+    <>
       <div className="component-page">
         {props.children}
       </div>
       <SuggestComponent currentComponent={props.currentComponent} />
-    </div>
+    </>
   );
 };
 

@@ -14,7 +14,7 @@ const transformPath = (path: string) => {
 const HeadSEO: React.FC = () => {
   const router = useRouter();
   const overideSEO = {
-    titleTemplate: '%s | Drawin UI',
+    titleTemplate: '%s | Darwin UI',
     title: transformPath(router.pathname === '/' ? 'Coming soon' : router.pathname),
     canonical: router.route,
     description: 'Simple and Clean Tailwind Component with React Hook',
@@ -34,27 +34,27 @@ const HeadSEO: React.FC = () => {
           href: '/manifest.json',
         },
       ],
-    // openGraph: {
-    //   description: 'Simple and Clean Tailwind Component with React Hook',
-    //   images: [
-    //     {
-    //       url: `xxx`,
-    //       width: 800,
-    //       height: 600,
-    //       alt: 'Drawin UI',
-    //     },
-    //   ],
-    //   url: 'https://drawin.peter-o.tech',
-    //   type: 'website',
-    //   locale: 'en_IE',
-    //   site_name: 'Drawin UI',
-    // },
-    // twitter: {
-    //   cardType: 'summary_large_image',
-    //   title: 'Drawin UI',
-    //   description: 'Simple and Clean Tailwind Component with React Hook',
-    //   image: `xxx`,
-    // },
+    openGraph: {
+      description: 'Simple and Clean Tailwind Component with React Hook',
+      images: [
+        {
+          url: '/img/og-image.svg',
+          width: 800,
+          height: 600,
+          alt: 'Darwin UI',
+        },
+      ],
+      url: 'https://darwin.peter-o.tech',
+      type: 'website',
+      locale: 'en_IE',
+      site_name: 'Darwin UI',
+    },
+    twitter: {
+      cardType: 'summary_large_image',
+      title: 'Darwin UI',
+      description: 'Simple and Clean Tailwind Component with React Hook',
+      image: '/img/og-image.svg',
+    },
   };
   return (
     <>

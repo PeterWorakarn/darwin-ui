@@ -4,9 +4,9 @@ import path from 'path';
 import dynamic from 'next/dynamic';
 import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
+import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
 const Button = dynamic(import('../../../doc/button/Button'), { ssr: true });
-const ShowCaseBlock = dynamic(import('../../feature/showcase/components/ShowCaseBlock'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 

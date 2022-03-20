@@ -78,13 +78,13 @@
     }
     .code-editor-container {
       @apply relative h-code-block-height bg-[#1E1E1E] rounded-b-md;
-      .code-editor-conatiner__sourcecode {
-        @apply transition-all duration-150 absolute top-0 left-0;
+      .code-editor-container__sourcecode {
+        @apply transition-all duration-150 absolute top-0 left-0 rounded-b-md;
       }
     }
     pre {
       margin-top: 0px !important;
-      @apply w-of-block h-code-block-height rounded-b-md;
+      @apply w-of-block h-code-block-height shadow-2xl;
     }
   }
 } ;
