@@ -3,16 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import dynamic from 'next/dynamic';
 import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
-// import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
-// import HeaderBlock from '../../feature/showcase/components/HeaderBlock';
-// import PageComponent from '../../feature/showcase/components/PageComponent';
-// import DatePickerContainer from '../../../doc/datepicker/aDatePickerContainer';
 import { TComponentName } from '../../constant-enum-type/component';
 
-const DatePickerContainer = dynamic(import('../../../doc/datepicker/aDatePickerContainer'), { ssr: false });
+const DatePickerContainer = dynamic(import('../../../doc/datepicker/aDatePickerContainer'), { ssr: true });
 const ShowCaseBlock = dynamic(import('../../feature/showcase/components/ShowCaseBlock'), { ssr: true });
-const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: false });
-const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: false });
+const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
+const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.DATEPICKER;
 const short = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra erat eget sapien';

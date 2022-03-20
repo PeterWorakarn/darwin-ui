@@ -1,12 +1,14 @@
 import type { NextPage } from 'next';
 import fs from 'fs';
 import path from 'path';
+import dynamic from 'next/dynamic';
 import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
-import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
-import HeaderBlock from '../../feature/showcase/components/HeaderBlock';
-import Checkbox from '../../../doc/checkbox/Checkbox';
 import { TComponentName } from '../../constant-enum-type/component';
-import PageComponent from '../../feature/showcase/components/PageComponent';
+
+const Checkbox = dynamic(import('../../../doc/checkbox/Checkbox'), { ssr: true });
+const ShowCaseBlock = dynamic(import('../../feature/showcase/components/ShowCaseBlock'), { ssr: true });
+const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
+const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.CHECKBOX;
 const short = 'checkbox';

@@ -1,5 +1,8 @@
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import GithubFAB from './GithubFAB';
+// import GithubFAB from './GithubFAB';
+
+const GithubFAB = dynamic(import('./GithubFAB'), { ssr: true });
 
 const Layout: React.FC = (props) => {
   return (
