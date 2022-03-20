@@ -42,6 +42,20 @@
   src: url('/fonts/Nunito/Nunito-SemiBold.ttf')
     format('truetype');
 }
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Nunito/Nunito-Bold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: Nunito;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/Nunito/Nunito-ExtraBold.ttf')
+    format('truetype');
+}
 /* Poppins */
 @font-face {
   font-family: Poppins;

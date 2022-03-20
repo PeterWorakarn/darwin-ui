@@ -14,8 +14,8 @@ const Layout: React.FC = (props) => {
         <div className="w-full px-4 lg:px-0 mx-auto w-of-container h-[32px] flex justify-between">
           {/* max-w-[1210px] */}
           <Link href="/">
-            <a className="w-8 h-8 bg-primary-navy rounded-sm">
-              <div className="w-8 h-8 bg-primary-navy rounded-sm" />
+            <a className="w-8 h-8">
+              <img alt="drawin-logo" src="/darwin.svg" className="w-8 h-8 rounded-lg" />
             </a>
           </Link>
         </div>

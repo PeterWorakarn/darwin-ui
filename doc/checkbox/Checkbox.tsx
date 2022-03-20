@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BsCheckLg } from 'react-icons/bs';
 
-const Checkbox: React.FC = () => {
+const Checkbox: React.FC = (props) => {
   const [checkboxValue, setCheckboxValue] = useState(true);
 
   return (
@@ -26,7 +26,7 @@ const Checkbox: React.FC = () => {
       />
       <span
         className={`transition-all duration-150 select-none text-xl text-[#6e6e6e] 
-        ${checkboxValue ? 'font-medium' : 'font-normal'}`}
+        ${checkboxValue ? 'font-semibold' : 'font-light'}`}
       >
         Option
       </span>

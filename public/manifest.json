@@ -3,37 +3,37 @@
   "short_name": "Darwin UI",
   "icons": [
     {
-      "src": "/icons/favicon-16x16.png",
+      "src": "/darwin.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-32x32.png",
+      "src": "/darwin.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-70x70.png",
+      "src": "/darwin.png",
       "sizes": "70x70",
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-144x144.png",
+      "src": "/darwin.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-150x150.png",
+      "src": "/darwin.png",
       "sizes": "150x150",
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-310x150.png",
+      "src": "/darwin.png",
       "sizes": "310x150",
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-310x310.png",
+      "src": "/darwin.png",
       "sizes": "310x310",
       "type": "image/png"
     }

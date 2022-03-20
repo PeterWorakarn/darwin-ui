@@ -22,11 +22,11 @@ const HeadSEO: React.FC = () => {
       [
         {
           rel: 'icon',
-          href: '/favicon.ico',
+          href: '/darwin_icon.ico',
         },
         {
           rel: 'apple-touch-icon',
-          href: '/icons/apple-touch-icon.png',
+          href: '/darwin.png',
           sizes: '76x76',
         },
         {
