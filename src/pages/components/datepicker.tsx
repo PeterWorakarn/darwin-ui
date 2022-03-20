@@ -5,16 +5,17 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 import HeaderBlock from '../../feature/showcase/components/HeaderBlock';
 import DatePickerContainer from '../../../doc/datepicker/aDatePickerContainer';
+import { TComponentName } from '../../constant-enum-type/component';
+import PageComponent from '../../feature/showcase/components/PageComponent';
 
-const title = 'datepicker';
-const short = 'datepicker';
-const component_name = 'datepicker';
+const title = TComponentName.DATEPICKER;
+const short = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra erat eget sapien';
+const component_name = TComponentName.DATEPICKER;
 const blockType: TBlockType = TBlockType.RECTANGLE;
 const component = (
   <DatePickerContainer />
 );
 const markDown = `
-  # Hello world
 `;
 
 export const getStaticProps = async () => {
@@ -49,7 +50,7 @@ const DatePickerPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
-    <>
+    <PageComponent currentComponent={component_name}>
       <HeaderBlock
         title={title}
         short={short}
@@ -60,7 +61,7 @@ const DatePickerPage: NextPage<DocProps> = ({
         component={component}
         doc={doc}
       />
-    </>
+    </PageComponent>
   );
 };
 

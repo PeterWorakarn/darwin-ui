@@ -5,16 +5,17 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 import HeaderBlock from '../../feature/showcase/components/HeaderBlock';
 import Button from '../../../doc/button/Button';
+import PageComponent from '../../feature/showcase/components/PageComponent';
+import { TComponentName } from '../../constant-enum-type/component';
 
-const title = 'button';
+const title = TComponentName.BUTTON;
 const short = 'The button is an essential element of any design.';
-const component_name = 'button';
+const component_name = TComponentName.BUTTON;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <Button />
 );
 const markDown = `
-
 `;
 
 export const getStaticProps = async () => {
@@ -49,7 +50,7 @@ const ButtonPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
-    <>
+    <PageComponent currentComponent={component_name}>
       <HeaderBlock
         title={title}
         short={short}
@@ -60,7 +61,7 @@ const ButtonPage: NextPage<DocProps> = ({
         component={component}
         doc={doc}
       />
-    </>
+    </PageComponent>
   );
 };
 

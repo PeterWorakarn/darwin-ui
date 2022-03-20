@@ -8,7 +8,7 @@ const transformPath = (path: string) => {
   // remove last query
   const pathname = extractPathName(path);
   // Create upper case
-  return titleCase(pathname.replace('/', '').replace('-', ' '));
+  return titleCase(pathname.replace(/\//g, '').replace(/-/g, ' '));
 };
 
 const HeadSEO: React.FC = () => {
@@ -18,22 +18,22 @@ const HeadSEO: React.FC = () => {
     title: transformPath(router.pathname === '/' ? 'Coming soon' : router.pathname),
     canonical: router.route,
     description: 'Simple and Clean Tailwind Component with React Hook',
-    // additionalLinkTags:
-    //   [
-    //     {
-    //       rel: 'icon',
-    //       href: '/favicon.ico',
-    //     },
-    //     {
-    //       rel: 'apple-touch-icon',
-    //       href: '/icons/apple-touch-icon.png',
-    //       sizes: '76x76'
-    //     },
-    //     {
-    //       rel: 'manifest',
-    //       href: '/manifest.json'
-    //     }
-    //   ],
+    additionalLinkTags:
+      [
+        {
+          rel: 'icon',
+          href: '/favicon.ico',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/icons/apple-touch-icon.png',
+          sizes: '76x76',
+        },
+        {
+          rel: 'manifest',
+          href: '/manifest.json',
+        },
+      ],
     // openGraph: {
     //   description: 'Simple and Clean Tailwind Component with React Hook',
     //   images: [

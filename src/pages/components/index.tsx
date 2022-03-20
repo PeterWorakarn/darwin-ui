@@ -1,16 +1,22 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
-import Button from '../../../doc/button/Button';
-import Checkbox from '../../../doc/checkbox/Checkbox';
-import DatePickerContainer from '../../../doc/datepicker/aDatePickerContainer';
 import ROUTES from '../../constant-enum-type/route';
 import Card from '../../feature/common/components/Card';
 
 const Component: NextPage = () => {
   return (
     <>
-      <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-9 mx-auto max-w-4xl py-5">
+      <section className="h-[430px] pt-20 pb-16 bg-gradient-to-br from-white to-blue-100">
+        <div className="w-full w-of-container mx-auto h-full px-4 xl:px-0">
+          <div className="max-w-lg flex flex-col justify-center h-full">
+            <h1 className="text-4xl sm:text-7xl font-poppins leading-tight font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-primary-navy">
+              Components
+            </h1>
+            <p className="pl-1 text-base font-nunito">Components are the fundamental building blocks of an interface.</p>
+          </div>
+        </div>
+      </section>
+      <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto w-of-container px-4 xl:px-0 py-5">
         {/* Loop components */}
         {ROUTES.filter(i => i.type === 'component').map((route) => {
           if (route.type === 'component') {

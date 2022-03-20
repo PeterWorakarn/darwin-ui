@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 
 interface THeaderBlock {
@@ -9,8 +10,11 @@ interface THeaderBlock {
 const HeaderBlock: React.FC<THeaderBlock> = (props) => {
   return (
     <>
-      <section className="header">
+      <div className="header">
         <div className="header-content">
+          <Link href="/components">
+            <a className="header__category">COMPONENT</a>
+          </Link>
           <h1 className="header__heading">
             {props.title}
           </h1>
@@ -18,7 +22,7 @@ const HeaderBlock: React.FC<THeaderBlock> = (props) => {
             {props.short}
           </p>
         </div>
-      </section>
+      </div>
       <ReactMarkdown className="description">
         {props.markDown}
       </ReactMarkdown>

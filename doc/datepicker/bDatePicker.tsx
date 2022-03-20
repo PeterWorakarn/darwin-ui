@@ -32,34 +32,38 @@ const DatePicker: React.FC<TDatePicker> = (props) => {
       bg-white z-10 w-full h-full top-0 left-0`}
       />
       <div className="relative z-20 w-56">
-        <div
-          onClick={() => setIsShowDatePicker((prev) => !prev)}
-          className="flex flex-row justify-between items-center"
-        >
-          <label
-            className="capitalize font-semibold text-[#6e6e6e]"
-            htmlFor={`${props.name ? props.name : 'date'}`}
+        {/* Date Input */}
+        <>
+          <div
+            onClick={() => setIsShowDatePicker((prev) => !prev)}
+            className="flex flex-row justify-between items-center"
           >
-            {props.label ? props.label : 'date'}
-          </label>
-        </div>
-        <div
-          onClick={() => setIsShowDatePicker((prev) => !prev)}
-          className="relative"
-        >
-          <input
-            className="text-sm text-[#2c2c2c] font-medium border
+            <label
+              className="capitalize font-semibold text-[#6e6e6e]"
+              htmlFor={`${props.name ? props.name : 'date'}`}
+            >
+              {props.label ? props.label : 'date'}
+            </label>
+          </div>
+          <div
+            onClick={() => setIsShowDatePicker((prev) => !prev)}
+            className="relative"
+          >
+            <input
+              className="text-sm text-[#2c2c2c] font-medium border
           border-[#E2E2E2] rounded-md py-1 px-3 my-1 w-56 outline-none"
-            id={props.name ? props.name : 'date'}
-            name={props.name ? props.name : 'date'}
-            value={moment(props.dateValue).format('DD MMM YYYY') as string}
-            type="text"
-            readOnly
-          />
-          <i className="absolute h-[30px] -top-1 flex items-center justify-center right-1.5 text-[#6e6e6e]">
-            <HiOutlineCalendar className="w-4 h-4 text-gray-400" />
-          </i>
-        </div>
+              id={props.name ? props.name : 'date'}
+              name={props.name ? props.name : 'date'}
+              value={moment(props.dateValue).format('DD MMM YYYY') as string}
+              type="text"
+              readOnly
+            />
+            <i className="absolute h-[30px] top-1 flex items-center justify-center right-1.5 text-[#6e6e6e]">
+              <HiOutlineCalendar className="w-4 h-4 text-gray-400" />
+            </i>
+          </div>
+        </>
+        {/* Date Modal */}
         <div
           className={`${isShowDatePicker ? 'opacity-100 mt-16' : 'opacity-0 mt-14'} 
           transition-all duration-100 bg-white rounded-md shadow pl-4 pr-2 py-2 absolute top-0 left-0 w-56`}
@@ -126,7 +130,7 @@ const DatePicker: React.FC<TDatePicker> = (props) => {
                   }}
                   className={`flex cursor-default justify-center items-center text-xs h-7 rounded-full font-bold 
                   ${moment(tempDate).set('date', dayInMonth).format('D MM YYYY') === moment(props.dateValue).format('D MM YYYY')
-                      ? 'bg-primary-navy text-white' : 'text-[#4B4B4B]'}`}
+                    ? 'bg-primary-navy text-white' : 'text-[#4B4B4B]'}`}
                   style={{ width: '14.18%' }}
                 >{dayInMonth}
                 </span>

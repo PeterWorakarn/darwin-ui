@@ -5,16 +5,17 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 import HeaderBlock from '../../feature/showcase/components/HeaderBlock';
 import Checkbox from '../../../doc/checkbox/Checkbox';
+import { TComponentName } from '../../constant-enum-type/component';
+import PageComponent from '../../feature/showcase/components/PageComponent';
 
-const title = 'checkbox';
+const title = TComponentName.CHECKBOX;
 const short = 'checkbox';
-const component_name = 'checkbox';
+const component_name = TComponentName.CHECKBOX;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <Checkbox />
 );
 const markDown = `
-  # Hello world
 `;
 
 export const getStaticProps = async () => {
@@ -45,11 +46,11 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const DatePickerPage: NextPage<DocProps> = ({
+const CheckboxPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
-    <>
+    <PageComponent currentComponent={component_name}>
       <HeaderBlock
         title={title}
         short={short}
@@ -60,8 +61,8 @@ const DatePickerPage: NextPage<DocProps> = ({
         component={component}
         doc={doc}
       />
-    </>
+    </PageComponent>
   );
 };
 
-export default DatePickerPage;
+export default CheckboxPage;

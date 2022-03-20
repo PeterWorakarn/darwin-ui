@@ -6,9 +6,9 @@ interface TBlock {
 
 const ComponentBlock: React.FC<TBlock> = (props) => {
   return (
-    <section className={`${props.type === 'square' ? 'h-[580px]' : 'h-[580px]'} absolute z-30 w-[580px] mx-auto flex justify-center items-center rounded-xl overflow-hidden bg-gray-100 shadow-inner`}>
+    <div className={`${props.type === 'square' ? 'h-component-block-height items-center' : 'h-component-block-height items-start pt-20'} component-container`}>
       {props.children}
-    </section>
+    </div>
   );
 };
 

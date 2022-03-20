@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
+import { TComponentName } from './component';
 
 type TRoute = {
   type: 'component';
@@ -37,31 +38,24 @@ const ROUTES: TRoute[] = [
   // Each component
   {
     type: 'component',
-    title: 'button',
+    title: TComponentName.BUTTON,
     slug: 'button',
     publish: true,
     component: <Button />,
   },
   {
     type: 'component',
-    title: 'checkbox',
-    slug: 'checkbox',
+    title: TComponentName.CHECKBOX,
+    slug: TComponentName.CHECKBOX,
     publish: true,
     component: <Checkbox />,
   },
   {
     type: 'component',
-    title: 'datePicker',
-    slug: 'datepicker',
+    title: TComponentName.DATEPICKER,
+    slug: TComponentName.DATEPICKER,
     publish: true,
     component: <DatePickerContainer />,
-  },
-  {
-    type: 'component',
-    title: 'accordion',
-    slug: 'accordion',
-    publish: false,
-    component: <></>,
   },
 ];
 
