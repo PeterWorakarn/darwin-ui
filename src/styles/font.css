@@ -2,6 +2,7 @@
 /* @font-face {
   font-family: Tenor Sans;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/TenorSans/TenorSans-Regular.ttf')
     format('truetype');
 } */
@@ -9,30 +10,35 @@
 @font-face {
   font-family: Nunito;
   font-weight: 200;
+  font-display: swap;
   src: url('/fonts/Nunito/Nunito-Thin.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Nunito;
   font-weight: 300;
+  font-display: swap;
   src: url('/fonts/Nunito/Nunito-Light.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Nunito;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/Nunito/Nunito-Regular.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Nunito;
   font-weight: 500;
+  font-display: swap;
   src: url('/fonts/Nunito/Nunito-Medium.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Nunito;
   font-weight: 600;
+  font-display: swap;
   src: url('/fonts/Nunito/Nunito-SemiBold.ttf')
     format('truetype');
 }
@@ -40,79 +46,92 @@
 @font-face {
   font-family: Poppins;
   font-weight: 200;
+  font-display: swap;
   src: url('/fonts/Poppins/Poppins-Thin.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 300;
+  font-display: swap;
   src: url('/fonts/Poppins/Poppins-Light.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/Poppins/Poppins-Regular.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 500;
+  font-display: swap;
   src: url('/fonts/Poppins/Poppins-Medium.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 600;
+  font-display: swap;
   src: url('/fonts/Poppins/Poppins-SemiBold.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 700;
+  font-display: swap;
   src: url('/fonts/Poppins/Poppins-Bold.ttf')
     format('truetype');
 }
 /* Lato */
-@font-face {
+/* @font-face {
   font-family: Lato;
   font-weight: 200;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-Thin.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Lato;
   font-weight: 300;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-Light.ttf')
     format('truetype');
 }
 @font-face {
-  font-family: Nunito;
+  font-family: Lato;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-Regular.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Lato;
   font-weight: 500;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-Medium.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Lato;
   font-weight: 600;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-SemiBold.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Lato;
   font-weight: 700;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-Bold.ttf')
     format('truetype');
 }
 @font-face {
   font-family: Lato;
   font-weight: 800;
+  font-display: swap;
   src: url('/fonts/Lato/Lato-Black.ttf')
     format('truetype');
-}
+} */
