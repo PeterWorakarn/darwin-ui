@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     <>
       <section className="h-[80vh] w-full flex justify-center items-center">
         <h1 className="text-5xl text-center font-extralight">
-          Coming Soon👺
+          Coming Soon 👺
         </h1>
       </section>
     </>
