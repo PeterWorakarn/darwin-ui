@@ -1,12 +1,13 @@
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import Document, {
+  DocumentContext, Head, Html, Main, NextScript,
+} from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
-        <Head>
-        </Head>
-        <body>
+      <Html style={{ scrollBehavior: 'smooth' }} lang="en">
+        <Head />
+        <body className="bg-[#F7F9FE] selection:bg-primary-navy selection:text-white scroll-bar font-nunito">
           <Main />
           <NextScript />
         </body>
