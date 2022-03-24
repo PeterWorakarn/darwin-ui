@@ -10,7 +10,7 @@ const FAB = dynamic(import('../../../doc/fab/aFAB'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.FAB;
+const title = 'FAB';
 const short = 'The F.A.B. refers to Floating Action Button.';
 const component_name = TComponentName.FAB;
 const blockType: TBlockType = TBlockType.SQUARE;

@@ -2,7 +2,7 @@ export enum TComponentName {
   BUTTON = 'button',
   DATEPICKER = 'datepicker',
   CHECKBOX = 'checkbox',
-  FAB = 'FAB',
+  FAB = 'fab',
 }
 
 export default {};
