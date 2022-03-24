@@ -7,6 +7,7 @@ import { HiChevronDoubleRight } from 'react-icons/hi';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
+import FAB from '../../doc/fab/aFAB';
 
 const Home: NextPage = () => {
   const stateHandler = () => {
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
             </a>
           </Link>
         </div>
-        <div className="max-w-md w-full h-full mt-10 mb-10 xl:mb-0 xl:mt-5 px-4 xl:px-0">
+        <div className="max-w-md w-full h-full mt-10 mb-10 xl:mb-0 xl:mt-5 px-4 xl:px-0 relative">
           <Link href="/components">
             <div className="transform-gpu  xl:rotate-3 xl:-skew-x-3 shadow-2xl xl:shadow rounded-md hover:shadow-2xl hover:-mt-2">
               <span className="flex h-4 w-4 rounded-full relative ml-auto">
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
                 <Button />
                 <Checkbox />
                 <DatePickerContainer />
+                <FAB />
               </div>
             </div>
           </Link>

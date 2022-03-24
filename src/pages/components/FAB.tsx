@@ -6,16 +6,16 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
-const Checkbox = dynamic(import('../../../doc/checkbox/Checkbox'), { ssr: true });
+const FAB = dynamic(import('../../../doc/fab/aFAB'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.CHECKBOX;
-const short = '';
-const component_name = TComponentName.CHECKBOX;
+const title = TComponentName.FAB;
+const short = 'The F.A.B. refers to Floating Action Button.';
+const component_name = TComponentName.FAB;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
-  <Checkbox />
+  <FAB />
 );
 const markDown = `
 `;
@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const CheckboxPage: NextPage<DocProps> = ({
+const FABPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const CheckboxPage: NextPage<DocProps> = ({
   );
 };
 
-export default CheckboxPage;
+export default FABPage;

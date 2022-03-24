@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
+import FAB from '../../doc/fab/aFAB';
 import { TComponentName } from './component';
 
 type TRoute = {
@@ -56,6 +57,13 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.DATEPICKER,
     publish: true,
     component: <DatePickerContainer />,
+  },
+  {
+    type: 'component',
+    title: TComponentName.FAB,
+    slug: TComponentName.FAB,
+    publish: true,
+    component: <FAB />,
   },
 ];
 
