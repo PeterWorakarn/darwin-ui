@@ -38,7 +38,7 @@ const HeadSEO: React.FC = () => {
       description: 'Simple and Clean Tailwind Component with React Hook',
       images: [
         {
-          url: '/img/og-image.svg',
+          url: '/img/og-image.png',
           width: 800,
           height: 600,
           alt: 'Darwin UI',
@@ -53,7 +53,7 @@ const HeadSEO: React.FC = () => {
       cardType: 'summary_large_image',
       title: 'Darwin UI',
       description: 'Simple and Clean Tailwind Component with React Hook',
-      image: '/img/og-image.svg',
+      image: '/img/og-image.png',
     },
   };
   return (
