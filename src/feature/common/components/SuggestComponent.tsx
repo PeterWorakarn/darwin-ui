@@ -19,7 +19,7 @@ export default function SuggestComponent(props: ISuggestComponentProps) {
       </div>
       <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto w-of-container py-5">
         {/* Loop components */}
-        {ROUTES.filter(each => each.type === 'component' && each.title !== props.currentComponent).filter((i, idx) => idx <= 6).map((route) => {
+        {ROUTES.filter(each => each.type === 'component' && each.title !== props.currentComponent).filter((i, idx) => idx <= 100).map((route) => {
           if (route.type === 'component') {
             return (
               <div className="relative" key={route.slug}>

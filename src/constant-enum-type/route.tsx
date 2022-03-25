@@ -2,6 +2,10 @@ import { ReactElement } from 'react';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
+import Dropdown from '../../doc/dropdown/aDropdown';
+import FAB from '../../doc/fab/aFAB';
+import OTP from '../../doc/otp/aOTPContainer';
+import Switch from '../../doc/switch/aSwitch';
 import { TComponentName } from './component';
 
 type TRoute = {
@@ -56,6 +60,34 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.DATEPICKER,
     publish: true,
     component: <DatePickerContainer />,
+  },
+  {
+    type: 'component',
+    title: TComponentName.FAB,
+    slug: TComponentName.FAB,
+    publish: true,
+    component: <FAB />,
+  },
+  {
+    type: 'component',
+    title: TComponentName.SWITCH,
+    slug: TComponentName.SWITCH,
+    publish: true,
+    component: <Switch />,
+  },
+  {
+    type: 'component',
+    title: TComponentName.DROPDOWN,
+    slug: TComponentName.DROPDOWN,
+    publish: true,
+    component: <Dropdown />,
+  },
+  {
+    type: 'component',
+    title: TComponentName.OTP,
+    slug: TComponentName.OTP,
+    publish: true,
+    component: <OTP />,
   },
 ];
 

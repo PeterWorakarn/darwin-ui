@@ -89,9 +89,8 @@ const DatePicker: React.FC<TDatePicker> = (props) => {
             </div>
           </div>
           <div
-            className="text-xs font-semibold text-center
-          pointer-events-none select-none text-[#6e6e6e]
-          -mx-1 flex justify-between"
+            className="text-xs font-semibold text-center pointer-events-none
+            select-none text-[#6e6e6e] -mx-1 flex justify-between"
           >
             {DAYS.map(day => {
               return (

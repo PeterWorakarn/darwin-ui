@@ -42,7 +42,7 @@ const CodeEditor: React.FC<TCodeEditor> = (props) => {
                   useInlineStyles
                   lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre' } }}
                   // showLineNumbers
-                  style={vscDarkPlus}
+                  style={materialDark}
                   codeTagProps={{ style: { fontSize: '0.75rem', lineHeight: '1' } }}
                 >
                   {code.file_content}
