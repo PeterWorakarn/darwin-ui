@@ -9,8 +9,8 @@ to help speed up your development.
 - [x] Datepicker
 - [x] Checkbox
 - [x] FAB
-- [ ] Switch
-- [ ] OTP input
+- [x] Switch
+- [x] Dropdown
+- [x] OTP input
 - [ ] Accordion
 - [ ] Credit Card input
-- [ ] Dropdown
