@@ -11,7 +11,7 @@ const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBloc
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.CHECKBOX;
-const short = '';
+const short = 'Simple checkbox component';
 const component_name = TComponentName.CHECKBOX;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (

@@ -11,7 +11,7 @@ const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBloc
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.DROPDOWN;
-const short = '';
+const short = 'Simple dropdown component';
 const component_name = TComponentName.DROPDOWN;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (

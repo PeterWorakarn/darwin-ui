@@ -11,7 +11,7 @@ const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBloc
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.DATEPICKER;
-const short = '';
+const short = 'Simple datepicker component';
 const component_name = TComponentName.DATEPICKER;
 const blockType: TBlockType = TBlockType.RECTANGLE;
 const component = (

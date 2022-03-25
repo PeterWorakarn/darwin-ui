@@ -11,7 +11,7 @@ const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBloc
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.OTP;
-const short = '';
+const short = 'The O.T.P. refers to One Time Password Input.';
 const component_name = TComponentName.OTP;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (

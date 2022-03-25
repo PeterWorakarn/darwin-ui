@@ -11,7 +11,7 @@ const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBloc
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
 const title = TComponentName.SWITCH;
-const short = '';
+const short = 'Simple switch component';
 const component_name = TComponentName.SWITCH;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
