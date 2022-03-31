@@ -6,7 +6,6 @@ export enum TComponentName {
   SWITCH = 'switch',
   DROPDOWN = 'dropdown',
   OTP = 'otp',
-  ADDTAGS = 'add-tags',
 }
 
 export default {};

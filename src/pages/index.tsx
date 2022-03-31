@@ -4,6 +4,7 @@ import {
   RefObject, useRef, MutableRefObject, LegacyRef,
 } from 'react';
 import { HiChevronDoubleRight } from 'react-icons/hi';
+import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
@@ -47,6 +48,7 @@ const Home: NextPage = () => {
                   <FAB />
                   <Dropdown />
                   <OTPContainer />
+                  <AddTagContainer />
                 </div>
               </section>
             </div>
