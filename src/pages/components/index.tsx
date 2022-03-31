@@ -22,17 +22,25 @@ const Component: NextPage = () => {
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto w-of-container px-4 xl:px-0 py-5">
         {/* Loop components */}
-        {ROUTES.filter(i => i.type === 'component').map((route) => {
+        {ROUTES.filter(i => i.type === 'component').sort((a, b) => (a.hightlight ? 0 : 1) - (b.hightlight ? 0 : 1)).map((route) => {
           if (route.type === 'component') {
             return (
-              <Fragment key={route.slug}>
+              <div className="relative" key={route.slug}>
+                {route.hightlight && (
+                  <div className="absolute top-0 -right-[6px]  z-50">
+                    <span className="flex h-4 w-4 rounded-full relative ml-auto">
+                      <span className="-mt-2 animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-navy opacity-75" />
+                      <span className="-mt-2 relative inline-flex rounded-full h-4 w-4 bg-primary-navy" />
+                    </span>
+                  </div>
+                )}
                 <Link href={`/components/${route.type === 'component' && route.slug}`}>
-                  <div className="relative">
+                  <div className={`${route.hightlight && 'border-double border-[2px] rounded-md border-primary-navy'} relative`}>
                     <a className="absolute w-full h-full opacity-0" />
                     <Card isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
                   </div>
                 </Link>
-              </Fragment>
+              </div>
             );
           }
           return null;
