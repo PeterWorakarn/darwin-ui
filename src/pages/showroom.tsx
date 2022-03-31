@@ -3,8 +3,6 @@ import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import { TBlockType } from '../constant-enum-type/doc';
-import GithubFAB from '../feature/common/components/GithubFAB';
-import Layout from '../feature/common/components/Layout';
 import ComponentBlock from '../feature/showcase/components/ComponentBlock';
 
 const ShowRoomPage: NextPage = () => {

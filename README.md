@@ -11,5 +11,6 @@ to help speed up your development.
 - [x] Switch
 - [x] Dropdown
 - [x] OTP input
+- [x] Add Tag
 - [ ] Accordion
 - [ ] Credit Card input
