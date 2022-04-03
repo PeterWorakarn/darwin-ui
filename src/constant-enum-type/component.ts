@@ -5,6 +5,7 @@ export enum TComponentName {
   FAB = 'fab',
   SWITCH = 'switch',
   DROPDOWN = 'dropdown',
+  ACCORDION = 'accordion',
   OTP = 'otp',
   ADDTAGS = 'add-tags',
 }

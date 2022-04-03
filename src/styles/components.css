@@ -53,7 +53,7 @@
         @apply text-xs font-poppins tracking-wider font-medium bg-primary-navy text-white hover:text-white px-2 py-1 rounded-full;
       }
       .header__tagline {
-        @apply capitalize text-base text-typo-minor line-clamp-2;
+        @apply text-base text-typo-minor line-clamp-2;
       }
     }
   }
