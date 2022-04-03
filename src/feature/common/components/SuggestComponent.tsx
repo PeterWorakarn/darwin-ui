@@ -22,11 +22,11 @@ export default function SuggestComponent(props: ISuggestComponentProps) {
         {ROUTES.filter(each => each.type === 'component' && each.title !== props.currentComponent).filter((i, idx) => idx <= 100).map((route) => {
           if (route.type === 'component') {
             return (
-              <div className="relative" key={route.slug}>
+              <div className="relative overflow-hidden" key={route.slug}>
                 <Link href={`/components/${route.type === 'component' && route.slug}`}>
                   <div>
                     <a className="absolute w-full h-full opacity-0" />
-                    <Card customClassName="h-[90px]" isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
+                    <Card customClassName="min-h-[100px] h-auto p-4" isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
                   </div>
                 </Link>
               </div>

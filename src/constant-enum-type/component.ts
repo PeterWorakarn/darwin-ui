@@ -8,6 +8,7 @@ export enum TComponentName {
   ACCORDION = 'accordion',
   OTP = 'otp',
   ADDTAGS = 'add-tags',
+  COMPACTCARD = 'compact-card',
 }
 
 export default {};

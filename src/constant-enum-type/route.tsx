@@ -3,6 +3,7 @@ import AccordionContainer from '../../doc/accordion/aAccordionContainer';
 import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
+import CompactCard from '../../doc/compact-card/aCompactCard';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
@@ -117,7 +118,15 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.ACCORDION,
     publish: true,
     component: <AccordionContainer />,
-    hightlight: true,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.COMPACTCARD,
+    slug: TComponentName.COMPACTCARD,
+    publish: true,
+    component: <CompactCard />,
+    hightlight: false,
   },
 ];
 
