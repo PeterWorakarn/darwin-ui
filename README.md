@@ -12,5 +12,6 @@ to help speed up your development.
 - [x] Dropdown
 - [x] OTP input
 - [x] Add Tag
+- [ ] Dynamic Address Thai version
 - [ ] Accordion
 - [ ] Credit Card input

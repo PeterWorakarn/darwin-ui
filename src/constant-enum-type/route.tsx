@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import AccordionContainer from '../../doc/accordion/aAccordionContainer';
 import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
@@ -108,6 +109,14 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.ADDTAGS,
     publish: true,
     component: <AddTagContainer />,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.ACCORDION,
+    slug: TComponentName.ACCORDION,
+    publish: true,
+    component: <AccordionContainer />,
     hightlight: true,
   },
 ];
