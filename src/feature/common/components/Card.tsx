@@ -11,7 +11,7 @@ const Card: React.FC<TCard> = (props) => {
       {
         props.isPublish
           ? (
-            <article className={`${props.customClassName} rounded-md xl:opacity-75 hover:opacity-100 hover:shadow-lg h-[260px] w-full flex justify-center items-center bg-white shadow transition-all`}>
+            <article className={`${props.customClassName} h-[260px] w-full flex justify-center items-center bg-white rounded-md`}>
               <div className="pointer-events-none select-none">
                 {props.children}
               </div>
