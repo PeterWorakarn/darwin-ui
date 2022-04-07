@@ -9,6 +9,7 @@ import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
 import OTP from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
+import TicketCard from '../../doc/ticket-card/aTicketCard';
 import { TComponentName } from './component';
 
 type TRoute = {
@@ -126,6 +127,14 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.COMPACTCARD,
     publish: true,
     component: <CompactCard />,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.TICKETCARD,
+    slug: TComponentName.TICKETCARD,
+    publish: true,
+    component: <TicketCard />,
     hightlight: false,
   },
 ];

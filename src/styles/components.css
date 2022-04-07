@@ -5,6 +5,7 @@
   }
   .w-of-block {
     @apply w-[322px] xs:w-[343px] sm:w-[580px];
+    /* @apply w-[322px] xs:w-[343px] sm:w-[900px]; */
   }
 
   /* Layout // */
@@ -40,6 +41,7 @@
   /* Components Page // */
   .component-page {
     @apply flex flex-col xl:flex-row w-full mx-auto w-of-container gap-2 xl:gap-5 h-[480px] xl:h-[370px] items-start sm:items-center md:items-start py-7 xl:py-16;
+    /* @apply flex flex-col w-full mx-auto w-of-container gap-2 xl:gap-5 h-[480px] xl:h-[370px] items-start sm:items-center md:items-start py-7 xl:py-16; */
   }
 
   /* Header Block */

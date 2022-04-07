@@ -9,6 +9,7 @@ export enum TComponentName {
   OTP = 'otp',
   ADDTAGS = 'add-tags',
   COMPACTCARD = 'compact-card',
+  TICKETCARD = 'ticket-card',
 }
 
 export default {};

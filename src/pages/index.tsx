@@ -10,6 +10,7 @@ import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
 import OTPContainer from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
+import TicketCard from '../../doc/ticket-card/aTicketCard';
 
 const Home: NextPage = () => {
   return (
@@ -45,6 +46,7 @@ const Home: NextPage = () => {
                   <OTPContainer />
                   <AddTagContainer />
                   <AccordionContainer />
+                  <TicketCard />
                 </div>
               </section>
             </div>
