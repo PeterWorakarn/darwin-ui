@@ -13,7 +13,7 @@ interface TShowCaseBlock {
 const ShowCaseBlock: React.FC<TShowCaseBlock> = (props) => {
   const [isShowCode, setIsShowCode] = useState(false);
   return (
-    <div className="showcase relative w-[322px] xs:w-[343px] sm:w-[580px]">
+    <div className="showcase relative">
       <button className="absolute top-3 right-3 z-40" type="button" onClick={() => setIsShowCode((prev) => !prev)}>
         {isShowCode ? <HiOutlineTemplate className="w-5 h-5 text-white" /> : <HiCode className="w-5 h-5" />}
       </button>
