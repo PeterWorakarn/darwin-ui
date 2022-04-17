@@ -16,10 +16,13 @@ to help speed up your development.
 - [x] Accordion
 - [x] Card
 - [x] Ticket Card
+- [ ] Modal
+- [ ] Drawer
 - [ ] Dynamic Address Thai version
       components/inputs/InputSwitch.tsx
 - [ ] Credit Card input
-- [ ] Drawer
+      https://codepen.io/mattriel/pen/QjzrxG
+      https://www.jqueryscript.net/form/Interactive-Credit-Card-Form-In-jQuery.html
 - [ ] Slider
 - [ ] Progress bar
 - [ ] Badge
