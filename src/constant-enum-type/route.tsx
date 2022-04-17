@@ -3,11 +3,14 @@ import AccordionContainer from '../../doc/accordion/aAccordionContainer';
 import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
+import CompactCard from '../../doc/compact-card/aCompactCard';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
+import ContentContainer from '../../doc/modal/bContentContainer';
 import OTP from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
+import TicketCard from '../../doc/ticket-card/aTicketCard';
 import { TComponentName } from './component';
 
 type TRoute = {
@@ -117,6 +120,30 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.ACCORDION,
     publish: true,
     component: <AccordionContainer />,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.COMPACTCARD,
+    slug: TComponentName.COMPACTCARD,
+    publish: true,
+    component: <CompactCard />,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.TICKETCARD,
+    slug: TComponentName.TICKETCARD,
+    publish: true,
+    component: <TicketCard />,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.Modal,
+    slug: TComponentName.Modal,
+    publish: true,
+    component: <ContentContainer />,
     hightlight: true,
   },
 ];

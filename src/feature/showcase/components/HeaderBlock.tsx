@@ -21,11 +21,11 @@ const HeaderBlock: React.FC<THeaderBlock> = (props) => {
           <p className="header__tagline">
             {props.short}
           </p>
+          <ReactMarkdown className="header__description">
+            {props.markDown}
+          </ReactMarkdown>
         </div>
       </div>
-      <ReactMarkdown className="description">
-        {props.markDown}
-      </ReactMarkdown>
     </>
   );
 };

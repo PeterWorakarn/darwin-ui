@@ -10,7 +10,7 @@ export interface ISuggestComponentProps {
 
 export default function SuggestComponent(props: ISuggestComponentProps) {
   return (
-    <div className="w-full px-4 xl:px-2 pt-24 pb-44 xl:pb-56 bg-primary-navy">
+    <div className="w-full px-4 xl:px-2 pt-[105px] pb-44 xl:pb-56 bg-primary-navy">
       <div className="w-of-container mx-auto flex justify-between items-center">
         <h2 className="text-white text-2xl font-nunito tracking-wider">Related Component</h2>
         <Link href="/components">
@@ -22,11 +22,11 @@ export default function SuggestComponent(props: ISuggestComponentProps) {
         {ROUTES.filter(each => each.type === 'component' && each.title !== props.currentComponent).filter((i, idx) => idx <= 100).map((route) => {
           if (route.type === 'component') {
             return (
-              <div className="relative" key={route.slug}>
+              <div className="relative overflow-hidden" key={route.slug}>
                 <Link href={`/components/${route.type === 'component' && route.slug}`}>
                   <div>
                     <a className="absolute w-full h-full opacity-0" />
-                    <Card customClassName="h-[90px]" isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
+                    <Card customClassName="min-h-[100px] h-auto p-4" isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
                   </div>
                 </Link>
               </div>
