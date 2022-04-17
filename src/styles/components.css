@@ -76,7 +76,7 @@
       @apply h-8 bg-[#1E1E1E] w-of-block flex items-center justify-start rounded-t-md pl-2;
     }
     .code-editor__filename {
-      @apply flex flex-row gap-2 bg-[#1E1E1E];
+      @apply flex flex-row gap-2 bg-[#1E1E1E] w-of-block overflow-x-auto;
     }
     .code-editor-container {
       @apply relative h-code-block-height bg-[#1E1E1E] rounded-b-md;
