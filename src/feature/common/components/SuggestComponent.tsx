@@ -10,7 +10,7 @@ export interface ISuggestComponentProps {
 
 export default function SuggestComponent(props: ISuggestComponentProps) {
   return (
-    <div className="w-full px-4 xl:px-2 pt-24 pb-44 xl:pb-56 bg-primary-navy">
+    <div className="w-full px-4 xl:px-2 pt-[105px] pb-44 xl:pb-56 bg-primary-navy">
       <div className="w-of-container mx-auto flex justify-between items-center">
         <h2 className="text-white text-2xl font-nunito tracking-wider">Related Component</h2>
         <Link href="/components">

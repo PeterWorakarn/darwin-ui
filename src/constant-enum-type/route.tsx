@@ -7,6 +7,7 @@ import CompactCard from '../../doc/compact-card/aCompactCard';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
+import ContentContainer from '../../doc/modal/bContentContainer';
 import OTP from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
@@ -136,6 +137,14 @@ const ROUTES: TRoute[] = [
     publish: true,
     component: <TicketCard />,
     hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.Modal,
+    slug: TComponentName.Modal,
+    publish: true,
+    component: <ContentContainer />,
+    hightlight: true,
   },
 ];
 

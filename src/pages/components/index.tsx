@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 import ROUTES from '../../constant-enum-type/route';
 // import Card from '../../feature/common/components/Card';
 
-const Card = dynamic(import('../../feature/common/components/Card'), { ssr: true });
+const Card = dynamic(import('../../feature/common/components/Card'), { ssr: false });
 
 const Component: NextPage = () => {
   return (

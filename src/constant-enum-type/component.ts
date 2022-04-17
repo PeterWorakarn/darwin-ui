@@ -10,6 +10,7 @@ export enum TComponentName {
   ADDTAGS = 'add-tags',
   COMPACTCARD = 'compact-card',
   TICKETCARD = 'ticket-card',
+  Modal = 'modal',
 }
 
 export default {};
