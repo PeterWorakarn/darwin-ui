@@ -11,6 +11,7 @@ import FAB from '../../doc/fab/aFAB';
 import ContentContainer from '../../doc/modal/bContentContainer';
 import OTPContainer from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
+import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
 
 const Home: NextPage = () => {
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
                   <div>
                     <ContentContainer />
                   </div>
+                  <Tags />
                 </div>
               </section>
             </div>
