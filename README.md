@@ -16,7 +16,9 @@ to help speed up your development.
 - [x] Accordion
 - [x] Card
 - [x] Ticket Card
-- [ ] Modal
+- [x] Modal
+- [x] Tags
+- [ ] Input Mask
 - [ ] Drawer
 - [ ] Dynamic Address Thai version
       components/inputs/InputSwitch.tsx
