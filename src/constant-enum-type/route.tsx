@@ -10,6 +10,7 @@ import FAB from '../../doc/fab/aFAB';
 import ContentContainer from '../../doc/modal/bContentContainer';
 import OTP from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
+import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
 import { TComponentName } from './component';
 
@@ -145,6 +146,14 @@ const ROUTES: TRoute[] = [
     publish: true,
     component: <ContentContainer />,
     hightlight: true,
+  },
+  {
+    type: 'component',
+    title: TComponentName.TAGS,
+    slug: TComponentName.TAGS,
+    publish: true,
+    component: <Tags />,
+    hightlight: false,
   },
 ];
 
