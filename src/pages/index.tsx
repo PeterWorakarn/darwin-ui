@@ -8,7 +8,7 @@ import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
-import ContentContainer from '../../doc/modal/bContentContainer';
+import ModalContainer from '../../doc/modal/bContentContainer';
 import OTPContainer from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
 import Tags from '../../doc/tags/aTags';
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
                   <AccordionContainer />
                   <TicketCard />
                   <div>
-                    <ContentContainer />
+                    <ModalContainer />
                   </div>
                   <Tags />
                 </div>

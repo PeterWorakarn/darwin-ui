@@ -1,7 +1,7 @@
 import ButtonModal from './cButtonModal';
 import ModalProvider from './aModalProvider';
 
-const ContentContainer: React.FC = () => {
+const ModalContainer: React.FC = () => {
   return (
     <ModalProvider>
       <ButtonModal />
@@ -9,4 +9,4 @@ const ContentContainer: React.FC = () => {
   );
 };
 
-export default ContentContainer;
+export default ModalContainer;

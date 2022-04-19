@@ -5,9 +5,10 @@ import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import CompactCard from '../../doc/compact-card/aCompactCard';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
+import ButtonDrawer from '../../doc/drawer/cButtonDrawer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
-import ContentContainer from '../../doc/modal/bContentContainer';
+import ModalContainer from '../../doc/modal/bContentContainer';
 import OTP from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
 import Tags from '../../doc/tags/aTags';
@@ -141,11 +142,11 @@ const ROUTES: TRoute[] = [
   },
   {
     type: 'component',
-    title: TComponentName.Modal,
-    slug: TComponentName.Modal,
+    title: TComponentName.MODAL,
+    slug: TComponentName.MODAL,
     publish: true,
-    component: <ContentContainer />,
-    hightlight: true,
+    component: <ModalContainer />,
+    hightlight: false,
   },
   {
     type: 'component',
@@ -153,6 +154,14 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.TAGS,
     publish: true,
     component: <Tags />,
+    hightlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.DRAWER,
+    slug: TComponentName.DRAWER,
+    publish: true,
+    component: <ButtonDrawer />,
     hightlight: false,
   },
 ];

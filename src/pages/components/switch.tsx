@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const FABPage: NextPage<DocProps> = ({
+const SwitchPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const FABPage: NextPage<DocProps> = ({
   );
 };
 
-export default FABPage;
+export default SwitchPage;

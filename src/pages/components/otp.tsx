@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const ButtonPage: NextPage<DocProps> = ({
+const OTPPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const ButtonPage: NextPage<DocProps> = ({
   );
 };
 
-export default ButtonPage;
+export default OTPPage;
