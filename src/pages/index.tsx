@@ -6,6 +6,7 @@ import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
+import ButtonDrawer from '../../doc/drawer/cButtonDrawer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
 import ModalContainer from '../../doc/modal/bContentContainer';
@@ -52,6 +53,7 @@ const Home: NextPage = () => {
                   <div>
                     <ModalContainer />
                   </div>
+                  <ButtonDrawer />
                   <Tags />
                 </div>
               </section>
