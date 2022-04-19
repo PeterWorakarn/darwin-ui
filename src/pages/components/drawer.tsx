@@ -6,19 +6,18 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
-const Dropdown = dynamic(import('../../../doc/dropdown/aDropdown'), { ssr: true });
+const DrawerContainer = dynamic(import('../../../doc/drawer/bContentContainer'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.DROPDOWN;
-const short = 'Simple dropdown component';
-const component_name = TComponentName.DROPDOWN;
+const title = 'Drawer';
+const short = 'Drawer can show pop up content that required to take action immediately.';
+const component_name = TComponentName.DRAWER;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
-  <Dropdown />
+  <DrawerContainer />
 );
-const markDown = `
-`;
+const markDown = 'In order to make drawer stay on top all the time, you need to place Modal component at page level.';
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync(
@@ -48,7 +47,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const DropdownPage: NextPage<DocProps> = ({
+const DrawerPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +66,4 @@ const DropdownPage: NextPage<DocProps> = ({
   );
 };
 
-export default DropdownPage;
+export default DrawerPage;

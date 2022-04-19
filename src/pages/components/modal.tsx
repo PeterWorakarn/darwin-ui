@@ -12,7 +12,7 @@ const PageComponent = dynamic(import('../../feature/showcase/components/PageComp
 
 const title = 'Modal';
 const short = 'Modal can show content that required to take action immediately.';
-const component_name = TComponentName.Modal;
+const component_name = TComponentName.MODAL;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <ModalContainer />

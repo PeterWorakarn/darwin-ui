@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const AccordionPage: NextPage<DocProps> = ({
+const TagsPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const AccordionPage: NextPage<DocProps> = ({
   );
 };
 
-export default AccordionPage;
+export default TagsPage;
