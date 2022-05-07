@@ -26,10 +26,10 @@ const ModalProvider: React.FC = (props) => {
   });
 
   useEffect(() => {
-    if (modalStatus.status) {
+    if (modalStatus.status === true) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'unset';
     }
   }, [modalStatus.status]);
 

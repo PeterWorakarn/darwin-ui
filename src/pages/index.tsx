@@ -1,24 +1,27 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { HiChevronDoubleRight } from 'react-icons/hi';
 import AccordionContainer from '../../doc/accordion/aAccordionContainer';
 import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
-import ButtonDrawer from '../../doc/drawer/cButtonDrawer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
-import ModalContainer from '../../doc/modal/bContentContainer';
 import OTPContainer from '../../doc/otp/aOTPContainer';
 import Switch from '../../doc/switch/aSwitch';
 import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
+
   return (
     <>
-      <section className="h-[500px] xl:h-[80vh] 2xl:h-auto w-of-container w-full mx-auto flex flex-col-reverse xl:flex-row justify-center items-center">
+      <section className="h-[500px] xl:h-[80vh] 2xl:h-auto w-of-container w-full mx-auto flex flex-col pt-[190px] xl:pt-0 xl:flex-row justify-center items-center">
         <div className=" bg-transparent w-full h-full max-w-md mx-auto px-4 xl:px-0 xl:flex flex-col justify-center items-start">
           <h1 className="mb-1 text-6xl xl:text-7xl font-nunito text-left font-bold text-primary-navy">
             Darwin UI
@@ -49,12 +52,31 @@ const Home: NextPage = () => {
                   <OTPContainer />
                   <AddTagContainer />
                   <AccordionContainer />
-                  <TicketCard />
-                  <div>
-                    <ModalContainer />
-                  </div>
-                  <ButtonDrawer />
                   <Tags />
+                  <div className="flex gap-2 flex-wrap items-start">
+                    <TicketCard />
+                    <button
+                      type="button"
+                      className="bg-primary-navy text-white py-1
+                    px-3 outline-none rounded-md shadow w-auto flex items-center justify-center gap-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                      </svg>
+                      Drawer
+                    </button>
+                    <button
+                      type="button"
+                      className="bg-primary-navy text-white py-1
+                    px-3 outline-none rounded-md shadow w-auto flex items-center justify-center gap-2"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                      </svg>
+                      Modal
+                    </button>
+
+                  </div>
                 </div>
               </section>
             </div>

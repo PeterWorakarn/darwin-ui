@@ -26,10 +26,10 @@ const DrawerProvider: React.FC = (props) => {
   });
 
   useEffect(() => {
-    if (drawerStatus.status) {
+    if (drawerStatus.status === true) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'unset';
     }
   }, [drawerStatus.status]);
 
@@ -48,8 +48,8 @@ const DrawerProvider: React.FC = (props) => {
         ${drawerStatus.status ? 'opacity-30 bg-primary-navy' : 'opacity-0 bg-primary-navy invisible'}`}
       />
       <article
-        className={`${drawerStatus.status ? 'translate-y-[200px] xl:translate-y-[200px] opacity-100' : 'translate-y-[500px] xl:translate-y-[1000px] opacity-10'} 
-      xl:-translate-x-60 transition-all ease-in duration-150 fixed z-[70] flex-shrink-0 w-full max-w-xs h-1/2 xl:h-3/4 rounded-xl shadow pt-7 px-5 pb-4 mx-auto bg-white`}
+        className={`${drawerStatus.status ? '-translate-x-[40px] xl:-translate-x-[630px] xl:translate-y-[200px]  opacity-100' : ' xl:translate-y-[200px] -translate-x-[1000px] xl:-translate-x-[1000px] opacity-10'} 
+      transition-all ease-in duration-150 fixed z-[70] flex-shrink-0 w-full max-w-xs h-screen xl:h-1/2 rounded-xl shadow pt-7 px-5 pb-4 mx-auto bg-white`}
       >
         {drawerStatus.content}
       </article>
