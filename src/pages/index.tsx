@@ -6,6 +6,7 @@ import AccordionContainer from '../../doc/accordion/aAccordionContainer';
 import AddTagContainer from '../../doc/add-tags/aAddTagContainer';
 import Button from '../../doc/button/Button';
 import Checkbox from '../../doc/checkbox/Checkbox';
+import CitizenId from '../../doc/citizen-id/aCitizenId';
 import DatePickerContainer from '../../doc/datepicker/aDatePickerContainer';
 import Dropdown from '../../doc/dropdown/aDropdown';
 import FAB from '../../doc/fab/aFAB';
@@ -53,30 +54,32 @@ const Home: NextPage = () => {
                   <AddTagContainer />
                   <AccordionContainer />
                   <Tags />
-                  <div className="flex gap-2 flex-wrap items-start">
+                  <div className="flex gap-2  items-start">
                     <TicketCard />
-                    <button
-                      type="button"
-                      className="bg-primary-navy text-white py-1
-                    px-3 outline-none rounded-md shadow w-auto flex items-center justify-center gap-2"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-                      </svg>
-                      Drawer
-                    </button>
-                    <button
-                      type="button"
-                      className="bg-primary-navy text-white py-1
-                    px-3 outline-none rounded-md shadow w-auto flex items-center justify-center gap-2"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                      </svg>
-                      Modal
-                    </button>
-
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        className="bg-primary-navy text-white py-1
+                      px-3 outline-none rounded-md shadow w-auto flex items-center justify-center gap-2"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                        </svg>
+                        Drawer
+                      </button>
+                      <button
+                        type="button"
+                        className="bg-primary-navy text-white py-1
+                      px-3 outline-none rounded-md shadow w-auto flex items-center justify-center gap-2"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                        Modal
+                      </button>
+                    </div>
                   </div>
+                  <CitizenId />
                 </div>
               </section>
             </div>
