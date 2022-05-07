@@ -179,7 +179,7 @@ const ROUTES: TRoute[] = [
     title: TComponentName.ON_SCROLL,
     slug: TComponentName.ON_SCROLL,
     publish: true,
-    component: <OnScroll />,
+    component: <p>Scroll Animation</p>,
     hightlight: true,
   },
 ];
