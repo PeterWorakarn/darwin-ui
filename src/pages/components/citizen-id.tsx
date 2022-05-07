@@ -10,7 +10,7 @@ const CitizenId = dynamic(import('../../../doc/citizen-id/aCitizenId'), { ssr: t
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.CITIZEN_ID;
+const title = 'Citizen ID';
 const short = 'Text field for citizen ID component';
 const component_name = TComponentName.CITIZEN_ID;
 const blockType: TBlockType = TBlockType.SQUARE;
