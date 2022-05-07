@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html style={{ scrollBehavior: 'smooth' }} lang="en">
         <Head />
-        <body className="bg-[#F7F9FE] selection:bg-primary-navy selection:text-white scroll-bar font-nunito">
+        <body className="bg-[#F7F9FE] overflow-hidden selection:bg-primary-navy selection:text-white scroll-bar font-nunito">
           <Main />
           <NextScript />
         </body>
