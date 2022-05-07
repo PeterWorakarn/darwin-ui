@@ -13,6 +13,7 @@ export enum TComponentName {
   MODAL = 'modal',
   DRAWER = 'drawer',
   TAGS = 'tags',
+  CITIZEN_ID = 'citizen-id',
 }
 
 export default {};

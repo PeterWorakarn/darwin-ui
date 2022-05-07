@@ -18,10 +18,11 @@ to help speed up your development.
 - [x] Ticket Card
 - [x] Modal
 - [x] Tags
-- [ ] Drawer // FIXME: Add to Full Screen Drawer
+- [x] Drawer
+- [x] Input Mask
 - [ ] Pagination //
       https://tailwind-elements.com/docs/standard/components/pagination/#
-- [ ] Input Mask
+- [ ] Tab bar
 - [ ] Dynamic Address Thai version
       components/inputs/InputSwitch.tsx
 - [ ] Credit Card input
@@ -30,7 +31,6 @@ to help speed up your development.
 - [ ] Slider
 - [ ] Progress bar
 - [ ] Badge
-- [ ] Tab Selection
 - [ ] Carousal
 - [ ] Marquee
 - [ ] Table
