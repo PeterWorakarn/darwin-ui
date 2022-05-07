@@ -15,6 +15,7 @@ import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
 import CitizenId from '../../doc/citizen-id/aCitizenId';
 import { TComponentName } from './component';
+import OnScroll from '../../doc/on-scroll/aOnScroll';
 
 type TRoute = {
   type: 'component';
@@ -171,6 +172,14 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.CITIZEN_ID,
     publish: true,
     component: <CitizenId />,
+    hightlight: true,
+  },
+  {
+    type: 'component',
+    title: TComponentName.ON_SCROLL,
+    slug: TComponentName.ON_SCROLL,
+    publish: true,
+    component: <OnScroll />,
     hightlight: true,
   },
 ];
