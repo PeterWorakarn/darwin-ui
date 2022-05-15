@@ -20,7 +20,7 @@ const Dropdown: React.FC = () => {
         aria-expanded="true"
         aria-haspopup="true"
         onClick={() => setIsOpen((prev) => !prev)}
-        onBlur={() => setIsOpen(false)}
+        onBlur={() => { setTimeout(() => { setIsOpen(false); }, 100); }}
       >
         <div
           className="pr-1 pl-6 py-0.5 capitalize text-sm text-typo-main

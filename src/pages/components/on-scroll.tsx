@@ -6,16 +6,16 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
-const Checkbox = dynamic(import('../../../doc/checkbox/Checkbox'), { ssr: true });
+const OnScroll = dynamic(import('../../../doc/on-scroll/aOnScroll'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.CHECKBOX;
-const short = 'Checkbox used to select many option from many choice.';
-const component_name = TComponentName.CHECKBOX;
+const title = 'Scroll Animation';
+const short = 'Create Animation when user scroll';
+const component_name = TComponentName.ON_SCROLL;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
-  <Checkbox />
+  <OnScroll />
 );
 const markDown = `
 `;
@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const CheckboxPage: NextPage<DocProps> = ({
+const FABPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const CheckboxPage: NextPage<DocProps> = ({
   );
 };
 
-export default CheckboxPage;
+export default FABPage;
