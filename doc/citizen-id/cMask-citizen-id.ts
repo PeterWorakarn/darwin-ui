@@ -12,12 +12,12 @@ const maskCitizenID = (text: string) => {
   return !textValue[2]
     ? `${textValue[1]}`
     : !textValue[3]
-      ? `${textValue[1]}  ${textValue[2]}`
+      ? `${textValue[1]}-${textValue[2]}`
       : !textValue[4]
-        ? `${textValue[1]}  ${textValue[2]}  ${textValue[3]}`
+        ? `${textValue[1]}-${textValue[2]}-${textValue[3]}`
         : !textValue[5]
-          ? `${textValue[1]}  ${textValue[2]}  ${textValue[3]}  ${textValue[4]}`
-          : `${textValue[1]}  ${textValue[2]}  ${textValue[3]}  ${textValue[4]} ${textValue[5]}`;
+          ? `${textValue[1]}-${textValue[2]}-${textValue[3]}-${textValue[4]}`
+          : `${textValue[1]}-${textValue[2]}-${textValue[3]}-${textValue[4]}-${textValue[5]}`;
 };
 
 export const extractMaskCitizenID = (
