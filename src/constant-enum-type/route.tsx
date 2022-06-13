@@ -15,8 +15,8 @@ import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
 import CitizenId from '../../doc/citizen-id/aCitizenId';
 import { TComponentName } from './component';
-import OnScroll from '../../doc/on-scroll/aOnScroll';
 import RadioButtonGroup from '../../doc/radio-button/RadioButtonGroup';
+import Upload from '../../doc/upload/Upload';
 
 type TRoute = {
   type: 'component';
@@ -189,6 +189,14 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.RADIO,
     publish: true,
     component: <RadioButtonGroup />,
+    hightlight: true,
+  },
+  {
+    type: 'component',
+    title: TComponentName.UPLOAD,
+    slug: TComponentName.UPLOAD,
+    publish: true,
+    component: <Upload />,
     hightlight: true,
   },
 ];

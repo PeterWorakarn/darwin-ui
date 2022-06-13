@@ -16,6 +16,7 @@ export enum TComponentName {
   CITIZEN_ID = 'citizen-id',
   ON_SCROLL = 'on-scroll',
   RADIO = 'radio-button',
+  UPLOAD = 'upload',
 }
 
 export default {};
