@@ -6,16 +6,16 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
-const TicketCard = dynamic(import('../../../doc/ticket-card/aTicketCard'), { ssr: true });
+const Rating = dynamic(import('../../../doc/rating/aRating'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.TICKET_CARD;
-const short = 'Ticket Ticket component';
-const component_name = TComponentName.TICKET_CARD;
-const blockType: TBlockType = TBlockType.SQUARE;
+const title = 'Rating';
+const short = 'Star ratings are often used to classify things according to their quality.';
+const component_name = TComponentName.RATING;
+const blockType: TBlockType = TBlockType.RECTANGLE;
 const component = (
-  <TicketCard />
+  <Rating />
 );
 const markDown = `
 `;
@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const TicketCardPage: NextPage<DocProps> = ({
+const StarRatingPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const TicketCardPage: NextPage<DocProps> = ({
   );
 };
 
-export default TicketCardPage;
+export default StarRatingPage;
