@@ -23,14 +23,14 @@ to help speed up your development.
 - [x] On Scroll
 - [x] Radio button
 - [ ] Tooltips
-- [ ] Scroll remaining //
+- [ ] Scroll remaining // resource
       https://designcode.io/react-hooks-handbook-usescrollposition-hook
 - [ ] Dynamic Address Thai version
       components/inputs/InputSwitch.tsx
-- [ ] Pagination //
+- [ ] Pagination // resource
       https://tailwind-elements.com/docs/standard/components/pagination/#
 - [ ] Tab bar
-- [ ] Credit Card input
+- [ ] Credit Card input resource
       https://codepen.io/mattriel/pen/QjzrxG
       https://www.jqueryscript.net/form/Interactive-Credit-Card-Form-In-jQuery.html
 - [ ] Slider

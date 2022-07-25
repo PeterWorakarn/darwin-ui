@@ -18,6 +18,7 @@ import { TComponentName } from './component';
 import RadioButtonGroup from '../../doc/radio-button/RadioButtonGroup';
 import Upload from '../../doc/upload/Upload';
 import Rating from '../../doc/rating/aRating';
+import MegaMenuContainer from '../../doc/mega-menu/aMegaMenuContainer';
 
 type TRoute = {
   type: 'component';
@@ -190,7 +191,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.RADIO,
     publish: true,
     component: <RadioButtonGroup />,
-    highlight: false,
+    highlight: true,
   },
   {
     type: 'component',
@@ -198,6 +199,14 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.UPLOAD,
     publish: true,
     component: <Upload />,
+    highlight: true,
+  },
+  {
+    type: 'component',
+    title: TComponentName.MEGAMENU,
+    slug: TComponentName.MEGAMENU,
+    publish: true,
+    component: <MegaMenuContainer />,
     highlight: false,
   },
   {
