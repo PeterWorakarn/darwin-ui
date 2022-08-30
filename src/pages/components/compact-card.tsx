@@ -12,7 +12,7 @@ const PageComponent = dynamic(import('../../feature/showcase/components/PageComp
 
 const title = 'Card';
 const short = 'Simple Card with background image';
-const component_name = TComponentName.COMPACTCARD;
+const component_name = TComponentName.COMPACT_CARD;
 const blockType: TBlockType = TBlockType.RECTANGLE;
 const component = (
   <CompactCard />

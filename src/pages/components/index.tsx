@@ -23,11 +23,11 @@ const Component: NextPage = () => {
       <section className="flex flex-col sm:flex-row gap-5 mx-auto w-of-container px-4 xl:px-0 py-5">
         {/* Loop components 1 */}
         <div className="flex-col w-full sm:w-1/2">
-          {ROUTES.filter(i => i.type === 'component').sort((a, b) => (a.hightlight ? 0 : 1) - (b.hightlight ? 0 : 1)).map((route, _idx) => {
+          {ROUTES.filter(i => i.type === 'component').sort((a, b) => (a.highlight ? 0 : 1) - (b.highlight ? 0 : 1)).map((route, _idx) => {
             if (route.type === 'component' && _idx % 2 === 0) {
               return (
                 <div className="relative mb-5 rounded-md shadow hover:opacity-100 hover:shadow-lg hover:-translate-y-1 xl:opacity-80 transition-all" key={route.slug}>
-                  {route.hightlight && (
+                  {route.highlight && (
                     <div className="absolute top-0 -right-[6px]  z-50">
                       <span className="flex h-4 w-4 rounded-full relative ml-auto">
                         <span className="-mt-2 animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-navy opacity-75" />
@@ -36,7 +36,7 @@ const Component: NextPage = () => {
                     </div>
                   )}
                   <Link href={`/components/${route.type === 'component' && route.slug}`}>
-                    <div className={`${route.hightlight && 'border-2 border-double border-primary-navy rounded-md'} relative`}>
+                    <div className={`${route.highlight && 'border-2 border-double border-primary-navy rounded-md'} relative`}>
                       <a className="absolute w-full h-full opacity-0" />
                       <Card isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
                     </div>
@@ -49,11 +49,11 @@ const Component: NextPage = () => {
         </div>
         {/* Loop components 2 */}
         <div className="flex-col w-full sm:w-1/2 -mt-5 sm:mt-10">
-          {ROUTES.filter(i => i.type === 'component').sort((a, b) => (a.hightlight ? 0 : 1) - (b.hightlight ? 0 : 1)).map((route, _idx) => {
+          {ROUTES.filter(i => i.type === 'component').sort((a, b) => (a.highlight ? 0 : 1) - (b.highlight ? 0 : 1)).map((route, _idx) => {
             if (route.type === 'component' && _idx % 2 !== 0) {
               return (
                 <div className="relative mb-5 rounded-md shadow hover:opacity-100 hover:shadow-lg hover:-translate-y-1 xl:opacity-80 transition-all" key={route.slug}>
-                  {route.hightlight && (
+                  {route.highlight && (
                     <div className="absolute top-0 -right-[6px]  z-50">
                       <span className="flex h-4 w-4 rounded-full relative ml-auto">
                         <span className="-mt-2 animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-navy opacity-75" />
@@ -62,7 +62,7 @@ const Component: NextPage = () => {
                     </div>
                   )}
                   <Link href={`/components/${route.type === 'component' && route.slug}`}>
-                    <div className={`${route.hightlight && 'border-2 border-double border-primary-navy rounded-md'} relative`}>
+                    <div className={`${route.highlight && 'border-2 border-double border-primary-navy rounded-md'} relative`}>
                       <a className="absolute w-full h-full opacity-0" />
                       <Card isPublish={route.publish}>{route.type === 'component' && route.component}</Card>
                     </div>

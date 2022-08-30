@@ -6,16 +6,16 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
-const TicketCard = dynamic(import('../../../doc/ticket-card/aTicketCard'), { ssr: true });
+const Upload = dynamic(import('../../../doc/upload/Upload'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.TICKET_CARD;
-const short = 'Ticket Ticket component';
-const component_name = TComponentName.TICKET_CARD;
+const title = 'Upload';
+const short = 'Upload used to upload and preview image before send to server.';
+const component_name = TComponentName.UPLOAD;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
-  <TicketCard />
+  <Upload />
 );
 const markDown = `
 `;
@@ -48,7 +48,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const TicketCardPage: NextPage<DocProps> = ({
+const UploadPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +67,4 @@ const TicketCardPage: NextPage<DocProps> = ({
   );
 };
 
-export default TicketCardPage;
+export default UploadPage;

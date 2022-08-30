@@ -12,7 +12,7 @@ const PageComponent = dynamic(import('../../feature/showcase/components/PageComp
 
 const title = 'Add Tags';
 const short = 'Categorize data by tags taxonomy';
-const component_name = TComponentName.ADDTAGS;
+const component_name = TComponentName.ADD_TAGS;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <AddTags />

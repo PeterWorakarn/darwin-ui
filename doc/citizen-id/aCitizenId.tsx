@@ -5,6 +5,17 @@ import maskCitizenID, { extractMaskCitizenID } from './cMask-citizen-id';
 const CitizenId: React.FC = () => {
   const [value, setValue] = useState('');
 
+  const valueHandler = (newValue: string) => {
+    if (newValue.length > value.length) {
+      // add more text
+      setValue(maskCitizenID(newValue));
+    }
+    if (newValue.length < value.length) {
+      // remove text
+      setValue(newValue);
+    }
+  };
+
   return (
     <div>
       <label
@@ -15,8 +26,8 @@ const CitizenId: React.FC = () => {
         <input
           className="text-sm text-primary-navy font-medium border border-gray-200
           rounded-md py-2 px-3 w-full outline-none"
-          value={maskCitizenID(value)}
-          onChange={(e) => setValue(e.target.value)}
+          value={value}
+          onChange={(e) => valueHandler(e.target.value)}
           onKeyPress={(e) => acceptOnlyNumber(e)}
           name="name"
           type="text"

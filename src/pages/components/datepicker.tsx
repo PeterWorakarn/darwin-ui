@@ -10,9 +10,9 @@ const DatePickerContainer = dynamic(import('../../../doc/datepicker/aDatePickerC
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.DATEPICKER;
+const title = TComponentName.DATE_PICKER;
 const short = 'Simple datepicker component';
-const component_name = TComponentName.DATEPICKER;
+const component_name = TComponentName.DATE_PICKER;
 const blockType: TBlockType = TBlockType.RECTANGLE;
 const component = (
   <DatePickerContainer />

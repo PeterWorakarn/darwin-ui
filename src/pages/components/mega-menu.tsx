@@ -6,19 +6,18 @@ import { TBlockType, TSourceCode } from '../../constant-enum-type/doc';
 import { TComponentName } from '../../constant-enum-type/component';
 import ShowCaseBlock from '../../feature/showcase/components/ShowCaseBlock';
 
-const TicketCard = dynamic(import('../../../doc/ticket-card/aTicketCard'), { ssr: true });
+const MegaMenu = dynamic(import('../../../doc/mega-menu/aMegaMenuContainer'), { ssr: true });
 const HeaderBlock = dynamic(import('../../feature/showcase/components/HeaderBlock'), { ssr: true });
 const PageComponent = dynamic(import('../../feature/showcase/components/PageComponent'), { ssr: true });
 
-const title = TComponentName.TICKET_CARD;
-const short = 'Ticket Ticket component';
-const component_name = TComponentName.TICKET_CARD;
+const title = 'Mega Menu';
+const short = 'Credit: John Smilga';
+const component_name = TComponentName.MEGAMENU;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
-  <TicketCard />
+  <MegaMenu />
 );
-const markDown = `
-`;
+const markDown = 'credit: John Smilga';
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync(
@@ -48,7 +47,7 @@ interface DocProps {
   doc: TSourceCode[];
 }
 
-const TicketCardPage: NextPage<DocProps> = ({
+const MegaMenuPage: NextPage<DocProps> = ({
   doc,
 }) => {
   return (
@@ -67,4 +66,4 @@ const TicketCardPage: NextPage<DocProps> = ({
   );
 };
 
-export default TicketCardPage;
+export default MegaMenuPage;

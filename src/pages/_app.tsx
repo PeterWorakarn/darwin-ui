@@ -17,6 +17,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
     // Run Logic on GA
+    ReactGA.gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      anonymize_ip: true, // open by default when use with gtag.js
+    });
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
     router.events.on('routeChangeStart', () => {
       setIsLoading(true);

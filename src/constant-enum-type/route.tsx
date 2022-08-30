@@ -15,8 +15,10 @@ import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
 import CitizenId from '../../doc/citizen-id/aCitizenId';
 import { TComponentName } from './component';
-import OnScroll from '../../doc/on-scroll/aOnScroll';
 import RadioButtonGroup from '../../doc/radio-button/RadioButtonGroup';
+import Upload from '../../doc/upload/Upload';
+import Rating from '../../doc/rating/aRating';
+import MegaMenuContainer from '../../doc/mega-menu/aMegaMenuContainer';
 
 type TRoute = {
   type: 'component';
@@ -24,18 +26,18 @@ type TRoute = {
   slug: string;
   publish: boolean;
   component: ReactElement;
-  hightlight: boolean;
+  highlight: boolean;
 } | {
   type: 'page';
   title: string;
   slug: string;
   publish: boolean;
-  hightlight: boolean;
+  highlight: boolean;
 } | {
   type: 'title';
   title: string;
   menu: string[];
-  hightlight: boolean;
+  highlight: boolean;
 }
 
 const ROUTES: TRoute[] = [
@@ -45,14 +47,14 @@ const ROUTES: TRoute[] = [
     title: 'Home',
     slug: '/',
     publish: true,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'page',
     title: 'Components',
     slug: '/components',
     publish: true,
-    hightlight: false,
+    highlight: false,
   },
   // Each component
   {
@@ -61,7 +63,7 @@ const ROUTES: TRoute[] = [
     slug: 'button',
     publish: true,
     component: <Button />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -69,15 +71,15 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.CHECKBOX,
     publish: true,
     component: <Checkbox />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
-    title: TComponentName.DATEPICKER,
-    slug: TComponentName.DATEPICKER,
+    title: TComponentName.DATE_PICKER,
+    slug: TComponentName.DATE_PICKER,
     publish: true,
     component: <DatePickerContainer />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -85,7 +87,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.FAB,
     publish: true,
     component: <FAB />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -93,7 +95,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.SWITCH,
     publish: true,
     component: <Switch />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -101,7 +103,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.DROPDOWN,
     publish: true,
     component: <Dropdown />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -109,15 +111,15 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.OTP,
     publish: true,
     component: <OTP />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
-    title: TComponentName.ADDTAGS,
-    slug: TComponentName.ADDTAGS,
+    title: TComponentName.ADD_TAGS,
+    slug: TComponentName.ADD_TAGS,
     publish: true,
     component: <AddTagContainer />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -125,23 +127,23 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.ACCORDION,
     publish: true,
     component: <AccordionContainer />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
-    title: TComponentName.COMPACTCARD,
-    slug: TComponentName.COMPACTCARD,
+    title: TComponentName.COMPACT_CARD,
+    slug: TComponentName.COMPACT_CARD,
     publish: true,
     component: <CompactCard />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
-    title: TComponentName.TICKETCARD,
-    slug: TComponentName.TICKETCARD,
+    title: TComponentName.TICKET_CARD,
+    slug: TComponentName.TICKET_CARD,
     publish: true,
     component: <TicketCard />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -149,7 +151,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.MODAL,
     publish: true,
     component: <ModalContainer />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -157,7 +159,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.TAGS,
     publish: true,
     component: <Tags />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -165,7 +167,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.DRAWER,
     publish: true,
     component: <ButtonDrawer />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -173,7 +175,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.CITIZEN_ID,
     publish: true,
     component: <CitizenId />,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -181,7 +183,7 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.ON_SCROLL,
     publish: true,
     component: <p>Scroll Animation</p>,
-    hightlight: false,
+    highlight: false,
   },
   {
     type: 'component',
@@ -189,7 +191,31 @@ const ROUTES: TRoute[] = [
     slug: TComponentName.RADIO,
     publish: true,
     component: <RadioButtonGroup />,
-    hightlight: true,
+    highlight: true,
+  },
+  {
+    type: 'component',
+    title: TComponentName.UPLOAD,
+    slug: TComponentName.UPLOAD,
+    publish: true,
+    component: <Upload />,
+    highlight: true,
+  },
+  {
+    type: 'component',
+    title: TComponentName.MEGAMENU,
+    slug: TComponentName.MEGAMENU,
+    publish: true,
+    component: <MegaMenuContainer />,
+    highlight: false,
+  },
+  {
+    type: 'component',
+    title: TComponentName.RATING,
+    slug: TComponentName.RATING,
+    publish: true,
+    component: <Rating />,
+    highlight: true,
   },
 ];
 

@@ -15,6 +15,7 @@ import RadioButtonGroup from '../../doc/radio-button/RadioButtonGroup';
 import Switch from '../../doc/switch/aSwitch';
 import Tags from '../../doc/tags/aTags';
 import TicketCard from '../../doc/ticket-card/aTicketCard';
+import Upload from '../../doc/upload/Upload';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -79,6 +80,7 @@ const Home: NextPage = () => {
                         </svg>
                         Modal
                       </button>
+                      <Upload />
                     </div>
                   </div>
                   <CitizenId />
