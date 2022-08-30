@@ -33,6 +33,11 @@ to help speed up your development.
 - [ ] Credit Card input resource
       https://codepen.io/mattriel/pen/QjzrxG
       https://www.jqueryscript.net/form/Interactive-Credit-Card-Form-In-jQuery.html
+- [ ] Scroll remaining
+- [ ] Dynamic Address Thai version
+- [ ] Pagination
+- [ ] Tab bar
+- [ ] Credit Card input
 - [ ] Slider
 - [ ] Progress bar
 - [ ] Badge
