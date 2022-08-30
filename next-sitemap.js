@@ -1,4 +1,4 @@
-const siteUrl = "darwin.peter-o.tech";
+const siteUrl = "https://www.darwin.peter-o.tech";
 
 module.exports = {
   siteUrl,
