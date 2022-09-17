@@ -203,9 +203,9 @@ const ROUTES: TRoute[] = [
   },
   {
     type: 'component',
-    title: TComponentName.MEGAMENU,
-    slug: TComponentName.MEGAMENU,
-    publish: true,
+    title: TComponentName.MEGA_MENU,
+    slug: TComponentName.MEGA_MENU,
+    publish: false,
     component: <MegaMenuContainer />,
     highlight: false,
   },

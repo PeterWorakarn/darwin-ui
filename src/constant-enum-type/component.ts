@@ -18,7 +18,7 @@ export enum TComponentName {
   RADIO = 'radio-button',
   UPLOAD = 'upload',
   RATING = 'rating',
-  MEGAMENU = 'mega-menu',
+  MEGA_MENU = 'mega-menu',
 }
 
 export default {};
