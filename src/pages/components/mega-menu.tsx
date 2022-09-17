@@ -12,7 +12,7 @@ const PageComponent = dynamic(import('../../feature/showcase/components/PageComp
 
 const title = 'Mega Menu';
 const short = 'Credit: John Smilga';
-const component_name = TComponentName.MEGAMENU;
+const component_name = TComponentName.MEGA_MENU;
 const blockType: TBlockType = TBlockType.SQUARE;
 const component = (
   <MegaMenu />
